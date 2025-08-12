@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ms3_group47_evisa.CreateAccount">
+   <children>
+      <Label layoutX="256.0" layoutY="25.0" text="Create Account">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="49.0" layoutY="77.0" text="Full Name" />
+      <Label layoutX="49.0" layoutY="116.0" text="Email" />
+      <Label layoutX="49.0" layoutY="159.0" text="Phone No" />
+      <Label layoutX="49.0" layoutY="220.0" text="Address" />
+      <Label layoutX="300.0" layoutY="77.0" text="Gender" />
+      <Label layoutX="305.0" layoutY="191.0" text="Date of birth" />
+      <Label layoutX="305.0" layoutY="243.0" text="Password" />
+      <TextField fx:id="fullnameTextfield" layoutX="121.0" layoutY="73.0" />
+      <TextField fx:id="emailTextfield" layoutX="121.0" layoutY="112.0" />
+      <TextField fx:id="phoneNotextfield" layoutX="121.0" layoutY="155.0" />
+      <TextArea fx:id="addresstextarea" layoutX="121.0" layoutY="213.0" prefHeight="77.0" prefWidth="149.0" />
+      <RadioButton fx:id="maleradiobutton" layoutX="367.0" layoutY="77.0" mnemonicParsing="false" text="Male">
+         <toggleGroup>
+            <ToggleGroup fx:id="gender" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="femaleradiobutton" layoutX="367.0" layoutY="107.0" mnemonicParsing="false" text="Female" toggleGroup="$gender" />
+      <RadioButton fx:id="otherradiobutton" layoutX="365.0" layoutY="137.0" mnemonicParsing="false" text="Other" toggleGroup="$gender" />
+      <DatePicker fx:id="dobdatepicker" layoutX="377.0" layoutY="188.0" prefHeight="25.0" prefWidth="149.0" />
+      <PasswordField fx:id="passwordPF" layoutX="377.0" layoutY="239.0" />
+      <Button layoutX="328.0" layoutY="277.0" mnemonicParsing="false" onAction="#createaccountOnaction" text="Create Account" />
+      <TextArea fx:id="outputtextarea" editable="false" layoutX="97.0" layoutY="315.0" prefHeight="70.0" prefWidth="433.0" />
+   </children>
+</AnchorPane>
