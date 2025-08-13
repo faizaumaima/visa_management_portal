@@ -8,25 +8,7 @@ import javafx.stage.Stage;
 
 public class CustomerSupportAgencyDashboardController
 {
-    @javafx.fxml.FXML
-    public void initialize() {
-    }
-
-    @javafx.fxml.FXML
-    public void view(ActionEvent actionEvent) {
-    }
-
-    @javafx.fxml.FXML
-    public void logoutOnAction(ActionEvent actionEvent) {
-        try{
-            FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("Login.fxml"));
-            Scene scene = new Scene(fxmlLoader.load());
-            Stage stage = new Stage();
-            stage.setTitle("Hello!");
-            stage.setScene(scene);
-            stage.show();
-        } catch (Exception e) {
-            ///
-        }
+    @javafx.fxml.FXMLT  @javafx.fxml.FXML
+    public void viewSupportTicketsButtonOnAction(ActionEvent actionEvent) {
     }
 }

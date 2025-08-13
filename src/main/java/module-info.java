@@ -1,7 +1,6 @@
 module com.example.ms3_group47_evisa {
     requires javafx.controls;
     requires javafx.fxml;
-    requires com.example.ms3_group47_evisa;
     requires javafx.graphics;
 
 
