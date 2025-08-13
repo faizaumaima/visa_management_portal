@@ -26,11 +26,11 @@
             <Insets top="10.0" />
          </padding>
          <children>
-            <Button mnemonicParsing="false" text="View Support Tickets" />
+            <Button mnemonicParsing="false" onAction="#view" text="View Support Tickets" />
             <Button mnemonicParsing="false" text="Respond to Ticket" />
             <Button mnemonicParsing="false" text="Mark as Resolved" />
             <Button mnemonicParsing="false" text="View Applicant Info" />
-            <Button mnemonicParsing="false" text="Logout" />
+            <Button mnemonicParsing="false" onAction="#logoutOnAction" text="Logout" />
          </children>
       </VBox>
    </left>
