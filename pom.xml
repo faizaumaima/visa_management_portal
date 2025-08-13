@@ -5,9 +5,9 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.example</groupId>
-    <artifactId>MS3_group-47_e-visa</artifactId>
+    <artifactId>visa_management_portal</artifactId>
     <version>1.0-SNAPSHOT</version>
-    <name>MS3_group-47_e-visa</name>
+    <name>visa_management_portal</name>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -60,7 +60,8 @@
                         <!-- Default configuration for running with: mvn clean javafx:run -->
                         <id>default-cli</id>
                         <configuration>
-                            <mainClass>com.example.ms3_group47_evisa/com.example.ms3_group47_evisa.HelloApplication
+                            <mainClass>
+                                com.example.visa_management_portal/com.example.visa_management_portal.HelloApplication
                             </mainClass>
                             <launcher>app</launcher>
                             <jlinkZipName>app</jlinkZipName>

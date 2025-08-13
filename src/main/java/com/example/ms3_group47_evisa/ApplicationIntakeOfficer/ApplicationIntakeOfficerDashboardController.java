@@ -7,15 +7,14 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
-public class ApplicationIntakeOfficerDashboardController
-{
+public class ApplicationIntakeOfficerDashboardController {
     @javafx.fxml.FXML
     public void initialize() {
     }
 
     @javafx.fxml.FXML
     public void viewApplicationButtonOnAction(ActionEvent actionEvent) {
-        try{
+        try {
             FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("ApplicationIntakeOfficer/ApplicationVerification.fxml"));
             Scene scene = new Scene(fxmlLoader.load());
             Stage stage = new Stage();
@@ -29,7 +28,7 @@ public class ApplicationIntakeOfficerDashboardController
 
     @javafx.fxml.FXML
     public void logoutOnAction(ActionEvent actionEvent) {
-        try{
+        try {
             FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("Login.fxml"));
             Scene scene = new Scene(fxmlLoader.load());
             Stage stage = new Stage();

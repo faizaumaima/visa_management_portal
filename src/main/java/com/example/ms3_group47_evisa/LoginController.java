@@ -6,8 +6,7 @@ import javafx.scene.Scene;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
-public class LoginController
-{
+public class LoginController {
     @javafx.fxml.FXML
     private TextField UserIDtextfield;
     @javafx.fxml.FXML
@@ -19,7 +18,7 @@ public class LoginController
 
     @javafx.fxml.FXML
     public void loginOnaction(ActionEvent actionEvent) {
-        try{
+        try {
             FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("ApplicationIntakeOfficer/ApplicationIntakeOfficerDashboard.fxml"));
             Scene scene = new Scene(fxmlLoader.load());
             Stage stage = new Stage();
