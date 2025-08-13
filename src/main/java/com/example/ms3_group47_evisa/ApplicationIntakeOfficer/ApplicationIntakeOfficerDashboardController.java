@@ -40,4 +40,18 @@ public class ApplicationIntakeOfficerDashboardController
             ///
         }
     }
+
+    @javafx.fxml.FXML
+    public void CategorizationApplicationsOnAction(ActionEvent actionEvent) {
+        try{
+            FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("ApplicationIntakeOfficer/CategorizeApplications.fxml"));
+            Scene scene = new Scene(fxmlLoader.load());
+            Stage stage = new Stage();
+            stage.setTitle("Hello!");
+            stage.setScene(scene);
+            stage.show();
+        } catch (Exception e) {
+            ///
+        }
+    }
 }
