@@ -9,42 +9,41 @@
 <?import javafx.scene.text.Font?>
 
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0"
-            prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
-    <top>
-        <VBox prefHeight="104.0" prefWidth="600.0" BorderPane.alignment="CENTER">
-            <children>
-                <Label prefHeight="57.0" prefWidth="226.0" text="Data Entry Clark Dashboard">
-                    <font>
-                        <Font name="System Bold" size="17.0"/>
-                    </font>
-                </Label>
-            </children>
-        </VBox>
-    </top>
-    <left>
-        <VBox prefHeight="296.0" prefWidth="135.0" spacing="10.0" BorderPane.alignment="CENTER">
-            <padding>
-                <Insets top="20.0"/>
-            </padding>
-            <children>
-                <Button mnemonicParsing="false" text="Add New Application"/>
-                <Button mnemonicParsing="false" text="Edit Application"/>
-                <Button mnemonicParsing="false" text="View All Application"/>
-                <Button mnemonicParsing="false" text="Submit Application"/>
-                <Button mnemonicParsing="false" text="Logout"/>
-            </children>
-        </VBox>
-    </left>
-    <center>
-        <StackPane prefHeight="150.0" prefWidth="200.0" BorderPane.alignment="CENTER">
-            <children>
-                <Label prefHeight="45.0" prefWidth="208.0" text="Welcome Data Entry Clerk">
-                    <font>
-                        <Font size="16.0"/>
-                    </font>
-                </Label>
-            </children>
-        </StackPane>
-    </center>
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <top>
+      <VBox prefHeight="104.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label prefHeight="57.0" prefWidth="226.0" text="Data Entry Clark Dashboard">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+   </top>
+   <left>
+      <VBox prefHeight="296.0" prefWidth="135.0" spacing="10.0" BorderPane.alignment="CENTER">
+         <padding>
+            <Insets top="20.0" />
+         </padding>
+         <children>
+            <Button mnemonicParsing="false" text="Add New Application" />
+            <Button mnemonicParsing="false" text="Edit Application" />
+            <Button mnemonicParsing="false" text="View All Application" />
+            <Button mnemonicParsing="false" text="Submit Application" />
+            <Button mnemonicParsing="false" text="Logout" />
+         </children>
+      </VBox>
+   </left>
+   <center>
+      <StackPane prefHeight="150.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label prefHeight="45.0" prefWidth="208.0" text="Welcome Data Entry Clerk">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+         </children>
+      </StackPane>
+   </center>
 </BorderPane>
