@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="673.0" prefWidth="764.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.finalms3.CitizenServiceDashboard">
+   <children>
+      <Label layoutX="26.0" layoutY="21.0" text="Client-Citizen Service">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Button layoutX="35.0" layoutY="127.0" mnemonicParsing="false" text="Citizens Services Opt">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="35.0" layoutY="287.0" mnemonicParsing="false" text="Payment">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="35.0" layoutY="443.0" mnemonicParsing="false" text="Application Status Updats">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="689.0" layoutY="21.0" mnemonicParsing="false" text="Button" />
+      <AnchorPane layoutX="242.0" layoutY="127.0" prefHeight="527.0" prefWidth="508.0">
+         <children>
+            <Label layoutX="23.0" layoutY="14.0" text="Name:" />
+            <Label layoutX="23.0" layoutY="125.0" text="Date of Birth:" />
+            <Label layoutX="23.0" layoutY="193.0" text="Nationality:" />
+            <Label layoutX="26.0" layoutY="264.0" text="Visit of Purpose:" />
+            <Label layoutX="309.0" layoutY="14.0" prefHeight="7.0" prefWidth="28.0" text="ID:" />
+            <Label layoutX="309.0" layoutY="64.0" prefHeight="18.0" prefWidth="34.0" text="Email:" />
+            <Button layoutX="9.0" layoutY="341.0" mnemonicParsing="false" text="Upload Document" />
+            <Button layoutX="346.0" layoutY="341.0" mnemonicParsing="false" text="Document Type" />
+            <Button layoutX="420.0" layoutY="466.0" mnemonicParsing="false" text="Submit" />
+            <Label layoutX="23.0" layoutY="64.0" text="Phone Number:" />
+            <TextField layoutX="69.0" layoutY="10.0" />
+            <TextField layoutX="112.0" layoutY="60.0" />
+            <TextField layoutX="93.0" layoutY="189.0" />
+            <TextField layoutX="123.0" layoutY="260.0" />
+            <TextField layoutX="337.0" layoutY="10.0" />
+            <TextField layoutX="345.0" layoutY="60.0" />
+            <DatePicker layoutX="99.0" layoutY="121.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

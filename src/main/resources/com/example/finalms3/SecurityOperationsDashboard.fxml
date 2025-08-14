@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="670.0" prefWidth="776.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.finalms3.SecurityOperationsDashboard">
+   <children>
+      <Label layoutX="21.0" layoutY="23.0" text="SM-Security Operations">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Button layoutX="29.0" layoutY="145.0" mnemonicParsing="false" text="Live Feed" />
+      <Button layoutX="29.0" layoutY="343.0" mnemonicParsing="false" text="Incident Report" />
+      <AnchorPane layoutX="194.0" layoutY="158.0" prefHeight="484.0" prefWidth="572.0">
+         <children>
+            <Label layoutX="23.0" layoutY="25.0" text="Incident Report" />
+            <Label layoutX="23.0" layoutY="89.0" text="Incident ID:" />
+            <Button layoutX="475.0" layoutY="28.0" mnemonicParsing="false" text="Load" />
+            <TableView layoutX="14.0" layoutY="150.0" prefHeight="200.0" prefWidth="554.0">
+              <columns>
+                <TableColumn prefWidth="75.0" text="C1" />
+                <TableColumn prefWidth="75.0" text="C2" />
+                  <TableColumn prefWidth="90.4000244140625" text="C2" />
+                  <TableColumn prefWidth="98.39996337890625" text="C2" />
+                  <TableColumn prefWidth="89.5999755859375" text="C2" />
+                  <TableColumn prefWidth="125.5999755859375" text="C2" />
+              </columns>
+            </TableView>
+            <Button layoutX="475.0" layoutY="409.0" mnemonicParsing="false" text="Respond" />
+         </children>
+      </AnchorPane>
+      <Button layoutX="691.0" layoutY="23.0" mnemonicParsing="false" text="Back" />
+   </children>
+</AnchorPane>
