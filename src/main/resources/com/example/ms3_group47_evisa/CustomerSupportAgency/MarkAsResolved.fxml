@@ -1,6 +1,71 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
 
 
-<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" />
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="453.0" prefWidth="600.0" spacing="15.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ms3_group47_evisa.CustomerSupportAgency.MarkAsResolved">
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   </padding>
+   <children>
+      <Label text="Mark Ticket As Resolved">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <TitledPane animated="false" text="Ticket Details">
+        <content>
+          <AnchorPane fx:id="issueDescriptionArea" minHeight="0.0" minWidth="0.0" prefHeight="150.0" prefWidth="558.0">
+               <children>
+                  <GridPane layoutX="14.0" layoutY="16.0" prefHeight="91.0" prefWidth="306.0">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Label text="Ticket ID:" />
+                        <Label text="Customer Name:" GridPane.rowIndex="1" />
+                        <Label text="Issue Description:" GridPane.rowIndex="2" />
+                        <TextField fx:id="ticketIdField" prefHeight="38.0" prefWidth="108.0" GridPane.columnIndex="1" />
+                        <TextField fx:id="customerNameField" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                        <TextArea fx:id="issueDescriptionArea" prefHeight="23.0" prefWidth="141.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                     </children>
+                  </GridPane>
+               </children>
+            </AnchorPane>
+        </content>
+      </TitledPane>
+      <TitledPane animated="false" text="Resolution Notes">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="64.0" prefWidth="558.0">
+               <children>
+                  <TextArea fx:id="resolutionNotesArea" layoutY="3.0" prefHeight="58.0" prefWidth="560.0" promptText="Write resolution details here..." />
+               </children>
+            </AnchorPane>
+        </content>
+      </TitledPane>
+      <HBox alignment="CENTER" prefHeight="66.0" prefWidth="560.0" spacing="10.0">
+         <children>
+            <Button fx:id="markresolvedButton" mnemonicParsing="false" text="Mark As Resolved" />
+            <Button fx:id="cancelButton" mnemonicParsing="false" text="Cancel" />
+         </children>
+      </HBox>
+   </children>
+</VBox>

@@ -8,26 +8,24 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.VBox?>
 
-<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0"
-      prefWidth="600.0" spacing="15.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1"
-      fx:controller="com.example.ms3_group47_evisa.CustomerSupportAgency.SupportTicketController">
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" spacing="15.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ms3_group47_evisa.CustomerSupportAgency.SupportTicket">
     <padding>
-        <Insets top="20.0"/>
+        <Insets top="20.0" />
     </padding>
     <children>
-        <Label text="Support Ticket Dashboard"/>
+        <Label text="Support Ticket Dashboard" />
         <TableView prefHeight="113.0" prefWidth="555.0">
             <columns>
-                <TableColumn prefWidth="187.33334350585938" text="Ticket ID"/>
-                <TableColumn prefWidth="152.6666259765625" text="Applicant Name"/>
-                <TableColumn prefWidth="258.66668701171875" text="Status"/>
+                <TableColumn prefWidth="187.33334350585938" text="Ticket ID" />
+                <TableColumn prefWidth="152.6666259765625" text="Applicant Name" />
+                <TableColumn prefWidth="258.66668701171875" text="Status" />
             </columns>
         </TableView>
-        <Label text="Applicant Message"/>
-        <Label prefWidth="400.0" wrapText="true"/>
-        <Label text="Your Reply"/>
-        <TextField/>
-        <Button mnemonicParsing="false" text="Send Reply"/>
-        <Label prefWidth="400.0"/>
+        <Label text="Applicant Message" />
+        <Label prefHeight="39.0" prefWidth="488.0" wrapText="true" />
+        <Label text="Your Reply" />
+        <TextField />
+        <Button mnemonicParsing="false" text="Send Reply" />
+        <Label prefWidth="400.0" />
     </children>
 </VBox>

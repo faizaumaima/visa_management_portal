@@ -5,7 +5,8 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
-public class SupportTicketController {
+public class MarkAsResolved
+{
     @javafx.fxml.FXML
     public void initialize() {
     }

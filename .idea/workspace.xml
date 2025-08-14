@@ -4,33 +4,27 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e6b27a6c-3d90-4588-9336-db93faab6837" name="Changes" comment="Merge remote-tracking branch 'origin/master'&#10;&#10;# Conflicts:&#10;#&#9;src/main/java/com/example/ms3_group47_evisa/ApplicationIntakeOfficer/ApplicationIntakeOfficerDashboardController.java&#10;#&#9;src/main/java/com/example/ms3_group47_evisa/CustomerSupportAgency/CustomerSupportAgencyDashboardController.java&#10;#&#9;src/main/java/com/example/ms3_group47_evisa/CustomerSupportAgency/RespondToTicketController.java&#10;#&#9;src/main/resources/com/example/ms3_group47_evisa/ApplicationIntakeOfficer/ApplicationIntakeOfficerDashboard.fxml">
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/visa_management_portal/HelloApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/visa_management_portal/HelloController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/ms3_group47_evisa/CustomerSupportAgency/MarkAsResolved.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/visa_management_portal/hello-view.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ms3_group47_evisa/CustomerSupportAgency/RespondToTicketClass.java" beforeDir="false" />
+    <list default="true" id="432856a9-f1c8-499e-a237-35c91ed2c12b" name="Changes" comment="initial commit">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/ms3_group47_evisa/CustomerSupportAgency/ApplicantInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/ms3_group47_evisa/CustomerSupportAgency/MarkAsResolved.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/ms3_group47_evisa/CustomerSupportAgency/SupportTicket.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/ms3_group47_evisa/VisaOfficer/ViewPendingApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/ms3_group47_evisa/VisaOfficer/VisaOfficerDashboard.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/ms3_group47_evisa/CustomerSupportAgency/ApplicantInfo.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/ms3_group47_evisa/VisaOfficer/CheckDocument.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/ms3_group47_evisa/VisaOfficer/LoadApplicantData.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/ms3_group47_evisa/VisaOfficer/MarkAsEligible.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/ms3_group47_evisa/VisaOfficer/ValidateEligibility.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/ms3_group47_evisa/VisaOfficer/ViewPendingApplication.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ms3_group47_evisa/CustomerSupportAgency/CustomerSupportAgencyDashboardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ms3_group47_evisa/CustomerSupportAgency/CustomerSupportAgencyDashboardController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ms3_group47_evisa/CustomerSupportAgency/SupportTicketController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ms3_group47_evisa/CustomerSupportAgency/SupportTicketController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ms3_group47_evisa/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ms3_group47_evisa/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ms3_group47_evisa/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ms3_group47_evisa/HelloApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ms3_group47_evisa/VisaOfficer/VisaOfficerDashboardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ms3_group47_evisa/VisaOfficer/VisaOfficerDashboardController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/ms3_group47_evisa/ApplicationIntakeOfficer/ApplicationIntakeOfficerDashboard.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/ms3_group47_evisa/ApplicationIntakeOfficer/ApplicationIntakeOfficerDashboard.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/ms3_group47_evisa/ApplicationIntakeOfficer/ApplicationVerification.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/ms3_group47_evisa/ApplicationIntakeOfficer/ApplicationVerification.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/ms3_group47_evisa/ApplicationIntakeOfficer/CategorizeApplications.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/ms3_group47_evisa/ApplicationIntakeOfficer/CategorizeApplications.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/ms3_group47_evisa/ApplicationIntakeOfficer/ForwardApplication.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/ms3_group47_evisa/ApplicationIntakeOfficer/ForwardApplication.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/ms3_group47_evisa/ApplicationIntakeOfficer/IdentifyErrors.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/ms3_group47_evisa/ApplicationIntakeOfficer/IdentifyErrors.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/ms3_group47_evisa/CreateAccount.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/ms3_group47_evisa/CreateAccount.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/ms3_group47_evisa/CustomerSupportAgency/CustomerSupportAgencyDashboard.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/ms3_group47_evisa/CustomerSupportAgency/CustomerSupportAgencyDashboard.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/ms3_group47_evisa/CustomerSupportAgency/MarkAsResolved.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/ms3_group47_evisa/CustomerSupportAgency/MarkAsResolved.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/ms3_group47_evisa/CustomerSupportAgency/SupportTicket.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/ms3_group47_evisa/CustomerSupportAgency/SupportTicket.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/ms3_group47_evisa/DataEntryClerk/DataEntryClerkDashboard.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/ms3_group47_evisa/DataEntryClerk/DataEntryClerkDashboard.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/ms3_group47_evisa/DataEntryClerk/NewApplicantEntry.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/ms3_group47_evisa/DataEntryClerk/NewApplicantEntry.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/ms3_group47_evisa/FinancialOfficer/FinancialOfficerDashboard.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/ms3_group47_evisa/FinancialOfficer/FinancialOfficerDashboard.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/ms3_group47_evisa/ImmigrationOfficer/ImmigrationOfficerDashboard.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/ms3_group47_evisa/ImmigrationOfficer/ImmigrationOfficerDashboard.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/ms3_group47_evisa/Login.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/ms3_group47_evisa/Login.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/ms3_group47_evisa/VisaOfficer/VisaOfficerDashboard.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/ms3_group47_evisa/VisaOfficer/VisaOfficerDashboard.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -38,20 +32,68 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="FxmlFile" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectId" id="31DOhFbKVXwoQgt8rv9MTF4VE8O" />
-  <component name="ProjectLevelVcsManager">
-    <ConfirmationsSetting value="2" id="Add" />
-  </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.HelloApplication.executor": "Run",
-    "git-widget-placeholder": "Merging master"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;hridi61&quot;
   }
-}]]></component>
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/faizaumaima/visa_management_portal.git&quot;,
+    &quot;accountId&quot;: &quot;6aad83ed-e026-4122-b6b0-d22f4c2c7be3&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
+  <component name="ProjectId" id="31DOhFbKVXwoQgt8rv9MTF4VE8O" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.HelloApplication.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.tabs&quot;
+  }
+}</component>
   <component name="TaskManager">
+    <task id="LOCAL-00001" summary="initial commit">
+      <option name="closed" value="true" />
+      <created>1755110952219</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1755110952219</updated>
+    </task>
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="432856a9-f1c8-499e-a237-35c91ed2c12b" name="Changes" comment="initial commit" />
+      <created>1755123837001</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1755123837001</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="initial commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="initial commit" />
   </component>
 </project>

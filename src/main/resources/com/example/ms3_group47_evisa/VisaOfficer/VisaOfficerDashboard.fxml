@@ -8,8 +8,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ms3_group47_evisa.VisaOfficer.VisaOfficerDashboard">
    <top>
       <VBox prefHeight="102.0" prefWidth="600.0" BorderPane.alignment="CENTER">
          <children>
@@ -27,12 +26,12 @@
             <Insets top="10.0" />
          </padding>
          <children>
-            <Button mnemonicParsing="false" text="View Pending Applications" />
-            <Button mnemonicParsing="false" text="Load Applicant Data" />
-            <Button mnemonicParsing="false" text="Check document" />
-            <Button mnemonicParsing="false" text="Validate Eligibility" />
-            <Button mnemonicParsing="false" text="Mark as Eligible" />
-            <Button mnemonicParsing="false" text="Logout" />
+            <Button mnemonicParsing="false" onAction="#handleViewPendingApplicationsOnAction" text="View Pending Applications" />
+            <Button mnemonicParsing="false" onAction="#handleLoadApplicantDataOnAction" text="Load Applicant Data" />
+            <Button mnemonicParsing="false" onAction="#handleCheckDocumentOnAction" text="Check Document" />
+            <Button mnemonicParsing="false" onAction="#handleValidateEligibilityOnAction" text="Validate Eligibility" />
+            <Button mnemonicParsing="false" onAction="#handleMarkAsEligibleOnAction" text="Mark as Eligible" />
+            <Button mnemonicParsing="false" onAction="#logoutOnAction" text="Logout" />
          </children>
       </VBox>
    </left>
