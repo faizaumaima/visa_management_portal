@@ -16,7 +16,7 @@ public class ApplicationIntakeOfficerDashboardController
     @javafx.fxml.FXML
     public void viewApplicationButtonOnAction(ActionEvent actionEvent) {
         try{
-            FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("ApplicationIntakeOfficer/ApplicationVerification.fxml"));
+            FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("ApplicationIntakeOfficer/Application.fxml"));
             Scene scene = new Scene(fxmlLoader.load());
             Stage stage = new Stage();
             stage.setTitle("Hello!");
@@ -45,6 +45,34 @@ public class ApplicationIntakeOfficerDashboardController
     public void CategorizationApplicationsOnAction(ActionEvent actionEvent) {
         try{
             FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("ApplicationIntakeOfficer/CategorizeApplications.fxml"));
+            Scene scene = new Scene(fxmlLoader.load());
+            Stage stage = new Stage();
+            stage.setTitle("Hello!");
+            stage.setScene(scene);
+            stage.show();
+        } catch (Exception e) {
+            ///
+        }
+    }
+
+    @javafx.fxml.FXML
+    public void ForwardApplicationOnAction(ActionEvent actionEvent) {
+        try{
+            FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("ApplicationIntakeOfficer/ForwardApplications.fxml"));
+            Scene scene = new Scene(fxmlLoader.load());
+            Stage stage = new Stage();
+            stage.setTitle("Hello!");
+            stage.setScene(scene);
+            stage.show();
+        } catch (Exception e) {
+            ///
+        }
+    }
+
+    @javafx.fxml.FXML
+    public void CheckErrosOnAction(ActionEvent actionEvent) {
+        try{
+            FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("ApplicationIntakeOfficer/IdentifyErrors.fxml"));
             Scene scene = new Scene(fxmlLoader.load());
             Stage stage = new Stage();
             stage.setTitle("Hello!");

@@ -1,5 +1,9 @@
 package com.example.ms3_group47_evisa.CustomerSupportAgency;
 
+import javafx.event.ActionEvent;
+import javafx.scene.control.TextArea;
+import javafx.scene.control.TextField;
+
 public class RespondToTicketController
 {
     @javafx.fxml.FXML

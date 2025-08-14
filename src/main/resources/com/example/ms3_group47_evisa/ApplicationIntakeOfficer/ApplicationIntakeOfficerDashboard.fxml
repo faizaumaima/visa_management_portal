@@ -28,8 +28,8 @@
          <children>
             <Button mnemonicParsing="false" onAction="#viewApplicationButtonOnAction" text="View Application" />
             <Button mnemonicParsing="false" onAction="#CategorizationApplicationsOnAction" text="Categorization Applications" />
-            <Button mnemonicParsing="false" text="Check Errors" />
-            <Button mnemonicParsing="false" text="Forwared Application" />
+            <Button mnemonicParsing="false" onAction="#CheckErrosOnAction" text="Check Errors" />
+            <Button mnemonicParsing="false" onAction="#ForwardApplicationOnAction" text="Forwared Application" />
             <Button mnemonicParsing="false" text="Update Status" />
             <Button mnemonicParsing="false" onAction="#logoutOnAction" text="Logout" />
          </children>
