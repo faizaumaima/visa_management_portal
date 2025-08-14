@@ -8,41 +8,43 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ms3_group47_evisa.CustomerSupportAgency.CustomerSupportAgencyDashboardController">
-   <top>
-      <VBox prefHeight="113.0" prefWidth="600.0" BorderPane.alignment="CENTER">
-         <children>
-            <Label prefHeight="57.0" prefWidth="363.0" text="Customer Support Agency Dashboard">
-               <font>
-                  <Font name="System Bold" size="19.0" />
-               </font>
-            </Label>
-         </children>
-      </VBox>
-   </top>
-   <left>
-      <VBox prefHeight="287.0" prefWidth="133.0" spacing="20.0" BorderPane.alignment="CENTER">
-         <padding>
-            <Insets top="10.0" />
-         </padding>
-         <children>
-            <Button mnemonicParsing="false" onAction="#viewSupportTicketsButtonOnAction" text="View Support Tickets" />
-            <Button mnemonicParsing="false" text="Respond to Ticket" />
-            <Button mnemonicParsing="false" text="Mark as Resolved" />
-            <Button mnemonicParsing="false" text="View Applicant Info" />
-            <Button mnemonicParsing="false" onAction="#logoutOnAction" text="Logout" />
-         </children>
-      </VBox>
-   </left>
-   <center>
-      <StackPane prefHeight="150.0" prefWidth="200.0" BorderPane.alignment="CENTER">
-         <children>
-            <Label prefHeight="37.0" prefWidth="289.0" text="Welcome Customer Support Agency">
-               <font>
-                  <Font size="17.0" />
-               </font>
-            </Label>
-         </children>
-      </StackPane>
-   </center>
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0"
+            prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.example.ms3_group47_evisa.CustomerSupportAgency.CustomerSupportAgencyDashboardController">
+    <top>
+        <VBox prefHeight="113.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+            <children>
+                <Label prefHeight="57.0" prefWidth="363.0" text="Customer Support Agency Dashboard">
+                    <font>
+                        <Font name="System Bold" size="19.0"/>
+                    </font>
+                </Label>
+            </children>
+        </VBox>
+    </top>
+    <left>
+        <VBox prefHeight="287.0" prefWidth="133.0" spacing="20.0" BorderPane.alignment="CENTER">
+            <padding>
+                <Insets top="10.0"/>
+            </padding>
+            <children>
+                <Button mnemonicParsing="false" text="View Support Tickets"/>
+                <Button mnemonicParsing="false" text="Respond to Ticket"/>
+                <Button mnemonicParsing="false" text="Mark as Resolved"/>
+                <Button mnemonicParsing="false" text="View Applicant Info"/>
+                <Button mnemonicParsing="false" text="Logout"/>
+            </children>
+        </VBox>
+    </left>
+    <center>
+        <StackPane prefHeight="150.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+            <children>
+                <Label prefHeight="37.0" prefWidth="289.0" text="Welcome Customer Support Agency">
+                    <font>
+                        <Font size="17.0"/>
+                    </font>
+                </Label>
+            </children>
+        </StackPane>
+    </center>
 </BorderPane>

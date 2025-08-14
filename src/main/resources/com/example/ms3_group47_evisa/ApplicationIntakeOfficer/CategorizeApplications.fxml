@@ -11,77 +11,78 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
-   <top>
-      <HBox alignment="CENTER" prefHeight="34.0" prefWidth="600.0" BorderPane.alignment="CENTER">
-         <children>
-            <Label alignment="CENTER" prefHeight="35.0" prefWidth="149.0" text="Categorize Applications">
-               <font>
-                  <Font size="14.0" />
-               </font>
-            </Label>
-         </children>
-      </HBox>
-   </top>
-   <center>
-      <VBox prefHeight="345.0" prefWidth="600.0" BorderPane.alignment="CENTER">
-         <children>
-            <Label text="Application Data">
-               <font>
-                  <Font size="14.0" />
-               </font>
-            </Label>
-            <TableView prefHeight="99.0" prefWidth="600.0">
-              <columns>
-                <TableColumn prefWidth="142.6666259765625" text="Application ID" />
-                <TableColumn prefWidth="144.66668701171875" text="Applicant Name" />
-                  <TableColumn prefWidth="142.666748046875" text="Visa Type" />
-                  <TableColumn prefWidth="170.6666259765625" text="Travel Purpose" />
-              </columns>
-            </TableView>
-            <Label text="Verify Application">
-               <font>
-                  <Font name="System Bold" size="14.0" />
-               </font>
-            </Label>
-            <HBox prefHeight="28.0" prefWidth="600.0">
-               <children>
-                  <Label text="Visa Type" />
-                  <TextField />
-               </children>
-            </HBox>
-            <HBox prefHeight="31.0" prefWidth="600.0">
-               <children>
-                  <Label text="Travel Purpose" />
-                  <TextField />
-               </children>
-            </HBox>
-            <Button mnemonicParsing="false" text="Verify" />
-            <Label text="Assign Category">
-               <font>
-                  <Font size="14.0" />
-               </font>
-            </Label>
-            <HBox prefHeight="23.0" prefWidth="600.0">
-               <children>
-                  <Label text="Select Visa Category" />
-                  <ComboBox prefWidth="150.0" />
-               </children>
-            </HBox>
-            <Button mnemonicParsing="false" text="Assign Category" />
-            <HBox prefHeight="29.0" prefWidth="600.0">
-               <children>
-                  <Button mnemonicParsing="false" text="Update Application" />
-                  <Label prefHeight="28.0" prefWidth="400.0" />
-               </children>
-            </HBox>
-            <HBox alignment="CENTER" prefHeight="38.0" prefWidth="600.0" spacing="10.0">
-               <children>
-                  <Button mnemonicParsing="false" text="Back" />
-                  <Button alignment="CENTER" mnemonicParsing="false" text="Logout" />
-               </children>
-            </HBox>
-         </children>
-      </VBox>
-   </center>
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0"
+            prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+    <top>
+        <HBox alignment="CENTER" prefHeight="34.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+            <children>
+                <Label alignment="CENTER" prefHeight="35.0" prefWidth="149.0" text="Categorize Applications">
+                    <font>
+                        <Font size="14.0"/>
+                    </font>
+                </Label>
+            </children>
+        </HBox>
+    </top>
+    <center>
+        <VBox prefHeight="345.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+            <children>
+                <Label text="Application Data">
+                    <font>
+                        <Font size="14.0"/>
+                    </font>
+                </Label>
+                <TableView prefHeight="99.0" prefWidth="600.0">
+                    <columns>
+                        <TableColumn prefWidth="142.6666259765625" text="Application ID"/>
+                        <TableColumn prefWidth="144.66668701171875" text="Applicant Name"/>
+                        <TableColumn prefWidth="142.666748046875" text="Visa Type"/>
+                        <TableColumn prefWidth="170.6666259765625" text="Travel Purpose"/>
+                    </columns>
+                </TableView>
+                <Label text="Verify Application">
+                    <font>
+                        <Font name="System Bold" size="14.0"/>
+                    </font>
+                </Label>
+                <HBox prefHeight="28.0" prefWidth="600.0">
+                    <children>
+                        <Label text="Visa Type"/>
+                        <TextField/>
+                    </children>
+                </HBox>
+                <HBox prefHeight="31.0" prefWidth="600.0">
+                    <children>
+                        <Label text="Travel Purpose"/>
+                        <TextField/>
+                    </children>
+                </HBox>
+                <Button mnemonicParsing="false" text="Verify"/>
+                <Label text="Assign Category">
+                    <font>
+                        <Font size="14.0"/>
+                    </font>
+                </Label>
+                <HBox prefHeight="23.0" prefWidth="600.0">
+                    <children>
+                        <Label text="Select Visa Category"/>
+                        <ComboBox prefWidth="150.0"/>
+                    </children>
+                </HBox>
+                <Button mnemonicParsing="false" text="Assign Category"/>
+                <HBox prefHeight="29.0" prefWidth="600.0">
+                    <children>
+                        <Button mnemonicParsing="false" text="Update Application"/>
+                        <Label prefHeight="28.0" prefWidth="400.0"/>
+                    </children>
+                </HBox>
+                <HBox alignment="CENTER" prefHeight="38.0" prefWidth="600.0" spacing="10.0">
+                    <children>
+                        <Button mnemonicParsing="false" text="Back"/>
+                        <Button alignment="CENTER" mnemonicParsing="false" text="Logout"/>
+                    </children>
+                </HBox>
+            </children>
+        </VBox>
+    </center>
 </BorderPane>

@@ -7,18 +7,20 @@
 <?import javafx.scene.text.Font?>
 
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ms3_group47_evisa.LoginController">
-   <children>
-      <Label layoutX="272.0" layoutY="63.0" text="Login">
-         <font>
-            <Font name="System Bold" size="16.0" />
-         </font>
-      </Label>
-      <Label layoutX="195.0" layoutY="121.0" text="UserID" />
-      <Label layoutX="195.0" layoutY="182.0" text="Password" />
-      <TextField fx:id="UserIDtextfield" layoutX="272.0" layoutY="117.0" />
-      <TextField fx:id="PasswordTextfield" layoutX="272.0" layoutY="178.0" />
-      <Button layoutX="274.0" layoutY="248.0" mnemonicParsing="false" onAction="#loginOnaction" text="Login" />
-      <Button layoutX="484.0" layoutY="346.0" mnemonicParsing="false" onAction="#CreateaccountOnaction" text="Create Account" />
-   </children>
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ms3_group47_evisa.LoginController">
+    <children>
+        <Label layoutX="272.0" layoutY="63.0" text="Login">
+            <font>
+                <Font name="System Bold" size="16.0"/>
+            </font>
+        </Label>
+        <Label layoutX="195.0" layoutY="121.0" text="UserID"/>
+        <Label layoutX="195.0" layoutY="182.0" text="Password"/>
+        <TextField fx:id="UserIDtextfield" layoutX="272.0" layoutY="117.0"/>
+        <TextField fx:id="PasswordTextfield" layoutX="272.0" layoutY="178.0"/>
+        <Button layoutX="274.0" layoutY="248.0" mnemonicParsing="false" onAction="#loginOnaction" text="Login"/>
+        <Button layoutX="484.0" layoutY="346.0" mnemonicParsing="false" onAction="#CreateaccountOnaction"
+                text="Create Account"/>
+    </children>
 </AnchorPane>
