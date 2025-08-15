@@ -94,4 +94,18 @@ public class VisaOfficerDashboard {
             ///
         }
     }
+
+    @javafx.fxml.FXML
+    public void handleVisaReviewOnAction(ActionEvent actionEvent) {
+        try {
+            FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("VisaOfficer/VisaReview.fxml"));
+            Scene scene = new Scene(fxmlLoader.load());
+            Stage stage = new Stage();
+            stage.setTitle("Hello!");
+            stage.setScene(scene);
+            stage.show();
+        } catch (Exception e) {
+            ///
+        }
+    }
 }

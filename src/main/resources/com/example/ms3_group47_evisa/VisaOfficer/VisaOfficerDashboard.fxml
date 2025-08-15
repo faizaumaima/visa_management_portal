@@ -10,7 +10,7 @@
 
 <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ms3_group47_evisa.VisaOfficer.VisaOfficerDashboard">
    <top>
-      <VBox prefHeight="102.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+      <VBox prefHeight="79.0" prefWidth="600.0" BorderPane.alignment="CENTER">
          <children>
             <Label prefHeight="51.0" prefWidth="212.0" text="Visa Officer Dashboard">
                <font>
@@ -31,12 +31,13 @@
             <Button mnemonicParsing="false" onAction="#handleCheckDocumentOnAction" text="Check Document" />
             <Button mnemonicParsing="false" onAction="#handleValidateEligibilityOnAction" text="Validate Eligibility" />
             <Button mnemonicParsing="false" onAction="#handleMarkAsEligibleOnAction" text="Mark as Eligible" />
+            <Button mnemonicParsing="false" onAction="#handleVisaReviewOnAction" text="Visa Review" />
             <Button mnemonicParsing="false" onAction="#logoutOnAction" text="Logout" />
          </children>
       </VBox>
    </left>
    <center>
-      <StackPane prefHeight="150.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+      <StackPane prefHeight="0.0" prefWidth="434.0" BorderPane.alignment="CENTER">
          <children>
             <Label prefHeight="47.0" prefWidth="253.0" text="Welcome Visa Officer Dashboard">
                <font>

@@ -5,27 +5,37 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
-<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
 
-<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" spacing="15.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ms3_group47_evisa.CustomerSupportAgency.SupportTicket">
-    <padding>
-        <Insets top="20.0" />
-    </padding>
-    <children>
-        <Label text="Support Ticket Dashboard" />
-        <TableView prefHeight="113.0" prefWidth="555.0">
-            <columns>
-                <TableColumn prefWidth="187.33334350585938" text="Ticket ID" />
-                <TableColumn prefWidth="152.6666259765625" text="Applicant Name" />
-                <TableColumn prefWidth="258.66668701171875" text="Status" />
-            </columns>
-        </TableView>
-        <Label text="Applicant Message" />
-        <Label prefHeight="39.0" prefWidth="488.0" wrapText="true" />
-        <Label text="Your Reply" />
-        <TextField />
-        <Button mnemonicParsing="false" text="Send Reply" />
-        <Label prefWidth="400.0" />
-    </children>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="456.0" prefWidth="623.0" spacing="10.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ms3_group47_evisa.CustomerSupportAgency.SupportTicket">
+   <padding>
+      <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+   </padding>
+   <children>
+      <Label text="Support Ticket Ticket Dashboard">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tableViewTickets" prefHeight="135.0" prefWidth="570.0">
+        <columns>
+          <TableColumn fx:id="colTicketId" prefWidth="113.59997862577438" text="Ticket ID" />
+          <TableColumn fx:id="columnApplicantName" prefWidth="236.80003356933594" text="Applicant Name" />
+            <TableColumn fx:id="columnStatus" prefWidth="218.4000244140625" text="Status" />
+        </columns>
+      </TableView>
+      <Label text="Applicant Message:" />
+      <TextArea fx:id="textAreaApplicationMessage" prefHeight="65.0" prefWidth="570.0" />
+      <Label text="Your Reply:" />
+      <TextArea fx:id="textAreaReply" prefHeight="60.0" prefWidth="593.0" promptText="Type your reply here..." />
+      <HBox alignment="CENTER_RIGHT" prefHeight="38.0" prefWidth="593.0">
+         <children>
+            <Button fx:id="buttonsendReply" mnemonicParsing="false" onAction="#handleSendReply" text="SEnd Reply" />
+         </children>
+      </HBox>
+   </children>
 </VBox>
