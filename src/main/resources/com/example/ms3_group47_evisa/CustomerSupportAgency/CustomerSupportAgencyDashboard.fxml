@@ -26,7 +26,7 @@
                 <Insets top="10.0" />
             </padding>
             <children>
-                <Button mnemonicParsing="false" onAction="#handleViewSupportTicketsOnAction" text="View Support Tickets" />
+                <Button mnemonicParsing="false" onAction="#handleSupportTicketOnAction" text="Support Ticket" />
                 <Button mnemonicParsing="false" onAction="#handleRespondToTicketOnAction" text="Respond to Ticket" />
                 <Button mnemonicParsing="false" onAction="#markAsResolvedOnAction" text="Mark as Resolved" />
                 <Button mnemonicParsing="false" onAction="#viewApplicantInfoOnAction" text="View Applicant Info" />

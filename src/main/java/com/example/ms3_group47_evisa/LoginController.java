@@ -8,15 +8,15 @@ import javafx.stage.Stage;
 
 public class LoginController {
     @javafx.fxml.FXML
-    private TextField UserIDtextfield;
+    private TextField userIdTextField;
     @javafx.fxml.FXML
-    private TextField PasswordTextfield;
+    private TextField passwordTextfield;
 
     @javafx.fxml.FXML
     public void initialize() {
     }
 
-    @javafx.fxml.FXML
+    @Deprecated
     public void loginOnaction(ActionEvent actionEvent) {
         try {
             FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("ApplicationIntakeOfficer/ApplicationIntakeOfficerDashboard.fxml"));
@@ -30,7 +30,23 @@ public class LoginController {
         }
     }
 
+    @Deprecated
+    public void createaccountOnaction(ActionEvent actionEvent) {
+    }
+
+    @Deprecated
+    public void createAccountOnAction(ActionEvent actionEvent) {
+    }
+
+    @Deprecated
+    public void loginOnAction(ActionEvent actionEvent) {
+    }
+
     @javafx.fxml.FXML
-    public void CreateaccountOnaction(ActionEvent actionEvent) {
+    public void handleLoginOnAction(ActionEvent actionEvent) {
+    }
+
+    @javafx.fxml.FXML
+    public void handleCreateAccountOnAction(ActionEvent actionEvent) {
     }
 }
