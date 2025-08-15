@@ -3,6 +3,7 @@ module com.example.ms3_group47_evisa {
     requires javafx.fxml;
 
 
+
     opens com.example.ms3_group47_evisa to javafx.fxml;
     opens com.example.ms3_group47_evisa.ApplicationIntakeOfficer to javafx.fxml, javafx.base ;
     opens com.example.ms3_group47_evisa.ImmigrationOfficer to javafx.fxml, javafx.base;

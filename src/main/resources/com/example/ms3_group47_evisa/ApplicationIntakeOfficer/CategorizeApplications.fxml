@@ -11,14 +11,13 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0"
-            prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ms3_group47_evisa.ApplicationIntakeOfficer.CategorizeApplicationsController">
     <top>
         <HBox alignment="CENTER" prefHeight="34.0" prefWidth="600.0" BorderPane.alignment="CENTER">
             <children>
                 <Label alignment="CENTER" prefHeight="35.0" prefWidth="149.0" text="Categorize Applications">
                     <font>
-                        <Font size="14.0"/>
+                        <Font size="14.0" />
                     </font>
                 </Label>
             </children>
@@ -27,59 +26,55 @@
     <center>
         <VBox prefHeight="345.0" prefWidth="600.0" BorderPane.alignment="CENTER">
             <children>
-                <Label text="Application Data">
-                    <font>
-                        <Font size="14.0"/>
-                    </font>
-                </Label>
-                <TableView prefHeight="99.0" prefWidth="600.0">
+            <Button mnemonicParsing="false" onAction="#applicationdataOnaction" text="Application Data" />
+                <TableView fx:id="applicationdataTable" prefHeight="99.0" prefWidth="600.0">
                     <columns>
-                        <TableColumn prefWidth="142.6666259765625" text="Application ID"/>
-                        <TableColumn prefWidth="144.66668701171875" text="Applicant Name"/>
-                        <TableColumn prefWidth="142.666748046875" text="Visa Type"/>
-                        <TableColumn prefWidth="170.6666259765625" text="Travel Purpose"/>
+                        <TableColumn fx:id="applicationIdcol" prefWidth="142.6666259765625" text="Application ID" />
+                        <TableColumn fx:id="applicantnamecol" prefWidth="144.66668701171875" text="Applicant Name" />
+                        <TableColumn fx:id="visatypecol" prefWidth="142.666748046875" text="Visa Type" />
+                        <TableColumn fx:id="travelpurposecol" prefWidth="170.6666259765625" text="Travel Purpose" />
                     </columns>
                 </TableView>
                 <Label text="Verify Application">
                     <font>
-                        <Font name="System Bold" size="14.0"/>
+                        <Font name="System Bold" size="14.0" />
                     </font>
                 </Label>
                 <HBox prefHeight="28.0" prefWidth="600.0">
                     <children>
-                        <Label text="Visa Type"/>
-                        <TextField/>
+                        <Label text="Visa Type" />
+                        <TextField fx:id="visatypeTextfield" />
                     </children>
                 </HBox>
                 <HBox prefHeight="31.0" prefWidth="600.0">
                     <children>
-                        <Label text="Travel Purpose"/>
-                        <TextField/>
+                        <Label text="Travel Purpose" />
+                        <TextField fx:id="travelpurposeTextfield" />
                     </children>
                 </HBox>
-                <Button mnemonicParsing="false" text="Verify"/>
+                <Button mnemonicParsing="false" onAction="#verifyOnaction" text="Verify" />
                 <Label text="Assign Category">
                     <font>
-                        <Font size="14.0"/>
+                        <Font size="14.0" />
                     </font>
                 </Label>
                 <HBox prefHeight="23.0" prefWidth="600.0">
                     <children>
-                        <Label text="Select Visa Category"/>
-                        <ComboBox prefWidth="150.0"/>
+                        <Label text="Select Visa Category" />
+                        <ComboBox fx:id="visacategorycombobox" prefWidth="150.0" />
                     </children>
                 </HBox>
-                <Button mnemonicParsing="false" text="Assign Category"/>
+                <Button mnemonicParsing="false" onAction="#assigncategoryOnaction" text="Assign Category" />
                 <HBox prefHeight="29.0" prefWidth="600.0">
                     <children>
-                        <Button mnemonicParsing="false" text="Update Application"/>
-                        <Label prefHeight="28.0" prefWidth="400.0"/>
+                        <Button mnemonicParsing="false" onAction="#updateapplicationOnaction" text="Update Application" />
+                        <Label fx:id="outputlabel" prefHeight="28.0" prefWidth="400.0" />
                     </children>
                 </HBox>
                 <HBox alignment="CENTER" prefHeight="38.0" prefWidth="600.0" spacing="10.0">
                     <children>
-                        <Button mnemonicParsing="false" text="Back"/>
-                        <Button alignment="CENTER" mnemonicParsing="false" text="Logout"/>
+                        <Button mnemonicParsing="false" onAction="#backOnaction" text="Back" />
+                        <Button alignment="CENTER" mnemonicParsing="false" onAction="#logoutOnaction" text="Logout" />
                     </children>
                 </HBox>
             </children>

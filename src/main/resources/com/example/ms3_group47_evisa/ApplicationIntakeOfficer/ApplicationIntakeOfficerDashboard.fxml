@@ -8,7 +8,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ms3_group47_evisa.ApplicationIntakeOfficer.ApplicationIntakeOfficerDashboardController">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ms3_group47_evisa.ApplicationIntakeOfficer.ApplicationIntakeOfficerDashboard">
    <top>
       <VBox prefHeight="79.0" prefWidth="600.0" BorderPane.alignment="CENTER">
          <children>
@@ -26,11 +26,11 @@
             <Insets top="20.0" />
          </padding>
          <children>
-            <Button mnemonicParsing="false" onAction="#viewApplicationButtonOnAction" text="View Application" />
+            <Button mnemonicParsing="false" onAction="#viewApplicationOnAction" text="View Application" />
             <Button mnemonicParsing="false" onAction="#CategorizationApplicationsOnAction" text="Categorization Applications" />
-            <Button mnemonicParsing="false" text="Check Errors" />
-            <Button mnemonicParsing="false" text="Forwared Application" />
-            <Button mnemonicParsing="false" text="Update Status" />
+            <Button mnemonicParsing="false" onAction="#CheckErrosOnAction" text="Check Errors" />
+            <Button mnemonicParsing="false" onAction="#ForwardApplicationOnAction" text="Forwared Application" />
+            <Button mnemonicParsing="false" onAction="#UpdateStatusOnAtion" text="Update Status" />
             <Button mnemonicParsing="false" onAction="#logoutOnAction" text="Logout" />
          </children>
       </VBox>

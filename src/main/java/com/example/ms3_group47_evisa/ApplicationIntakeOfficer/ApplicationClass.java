@@ -2,15 +2,16 @@ package com.example.ms3_group47_evisa.ApplicationIntakeOfficer;
 
 import java.io.Serializable;
 
-public class ApplicationIntakeOfficeClass implements Serializable {
-    private String applicationid, name, nationality, email, travelpurpose;
+public class ApplicationClass implements Serializable {
+    private String applicationid, name, nationality, email, travelpurpose, visatype;
 
-    public ApplicationIntakeOfficeClass(String applicationid, String name, String nationality, String email, String travelpurpose) {
+    public ApplicationClass(String applicationid, String name, String nationality, String email, String travelpurpose, String visatype) {
         this.applicationid = applicationid;
         this.name = name;
         this.nationality = nationality;
         this.email = email;
         this.travelpurpose = travelpurpose;
+        this.visatype = visatype;
     }
 
     public String getApplicationid() {
@@ -53,14 +54,23 @@ public class ApplicationIntakeOfficeClass implements Serializable {
         this.travelpurpose = travelpurpose;
     }
 
+    public String getVisatype() {
+        return visatype;
+    }
+
+    public void setVisatype(String visatype) {
+        this.visatype = visatype;
+    }
+
     @Override
     public String toString() {
-        return "ApplicationIntakeOfficeClass{" +
+        return "ApplicationClass{" +
                 "applicationid='" + applicationid + '\'' +
                 ", name='" + name + '\'' +
                 ", nationality='" + nationality + '\'' +
                 ", email='" + email + '\'' +
                 ", travelpurpose='" + travelpurpose + '\'' +
+                ", visatype='" + visatype + '\'' +
                 '}';
     }
 }
