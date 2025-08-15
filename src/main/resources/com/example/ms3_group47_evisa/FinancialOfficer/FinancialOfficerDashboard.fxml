@@ -8,8 +8,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ms3_group47_evisa.FinancialOfficer.FinancialOfficerDashboardController">
    <top>
       <VBox prefHeight="89.0" prefWidth="600.0" BorderPane.alignment="CENTER">
          <children>
@@ -28,11 +27,11 @@
          </padding>
          <children>
             <Button mnemonicParsing="false" text="View Payment Records" />
-            <Button mnemonicParsing="false" text="Verify Transactions" />
-            <Button mnemonicParsing="false" text="Generate Financial Reports" />
-            <Button mnemonicParsing="false" text="Approve Refnds" />
-            <Button mnemonicParsing="false" text="Update Financial Status" />
-            <Button mnemonicParsing="false" text="Logout" />
+            <Button mnemonicParsing="false" onAction="#verifytranscationsonaction" text="Verify Transactions" />
+            <Button mnemonicParsing="false" onAction="#generatefinancialreportsonaction" text="Generate Financial Reports" />
+            <Button mnemonicParsing="false" onAction="#aprproverefindsonaction" text="Approve Refnds" />
+            <Button mnemonicParsing="false" onAction="#updatefinancialstatusonaction" text="Update Financial Status" />
+            <Button mnemonicParsing="false" onAction="#logoutonaction" text="Logout" />
          </children>
       </VBox>
    </left>
