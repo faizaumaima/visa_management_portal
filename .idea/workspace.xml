@@ -4,44 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e6b27a6c-3d90-4588-9336-db93faab6837" name="Changes" comment="Merge remote-tracking branch 'origin/master'&#10;&#10;# Conflicts:&#10;#&#9;src/main/java/com/example/ms3_group47_evisa/ApplicationIntakeOfficer/ApplicationIntakeOfficerDashboardController.java&#10;#&#9;src/main/java/com/example/ms3_group47_evisa/CustomerSupportAgency/CustomerSupportAgencyDashboardController.java&#10;#&#9;src/main/java/com/example/ms3_group47_evisa/CustomerSupportAgency/RespondToTicketController.java&#10;#&#9;src/main/resources/com/example/ms3_group47_evisa/ApplicationIntakeOfficer/ApplicationIntakeOfficerDashboard.fxml">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/ms3_group47_evisa/ApplicationIntakeOfficer/AppendableObjectOutputStream.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/ms3_group47_evisa/ApplicationIntakeOfficer/ApplicationController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/ms3_group47_evisa/ApplicationIntakeOfficer/CategorizeApplicationsController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/ms3_group47_evisa/ApplicationIntakeOfficer/ForwardApplicationController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/ms3_group47_evisa/ApplicationIntakeOfficer/ForwardClass.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/ms3_group47_evisa/ApplicationIntakeOfficer/IdentifyErrorsController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/ms3_group47_evisa/ApplicationIntakeOfficer/OfficerClass.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/ms3_group47_evisa/ApplicationIntakeOfficer/UpdateStatusController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/ms3_group47_evisa/ImmigrationOfficer/CheckBackgroundController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/ms3_group47_evisa/ImmigrationOfficer/CollaborateWithSecurityController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/ms3_group47_evisa/ImmigrationOfficer/DetectFraudController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/ms3_group47_evisa/ImmigrationOfficer/ImmigrationReviewController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/ms3_group47_evisa/ImmigrationOfficer/MakeDecisionsController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/ms3_group47_evisa/ImmigrationOfficer/ValidateComplianceController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/ms3_group47_evisa/ApplicationIntakeOfficer/UpdateStatus.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/ms3_group47_evisa/ImmigrationOfficer/CheckBackground.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/ms3_group47_evisa/ImmigrationOfficer/CollaborateWithSecurity.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/ms3_group47_evisa/ImmigrationOfficer/Detect Fraud.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/ms3_group47_evisa/ImmigrationOfficer/MakeDecisions.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/ms3_group47_evisa/ImmigrationOfficer/ValidateCompliance.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ms3_group47_evisa/ApplicationIntakeOfficer/ApplicationIntakeOfficeClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ms3_group47_evisa/ApplicationIntakeOfficer/ApplicationClass.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ms3_group47_evisa/ApplicationIntakeOfficer/ApplicationIntakeOfficerDashboardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ms3_group47_evisa/ApplicationIntakeOfficer/ApplicationIntakeOfficerDashboard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ms3_group47_evisa/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ms3_group47_evisa/HelloApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ms3_group47_evisa/ImmigrationOfficer/ImmigrationOfficerClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ms3_group47_evisa/ImmigrationOfficer/ImmigrationOfficerClass.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ms3_group47_evisa/ImmigrationOfficer/ImmigrationOfficerDashboardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ms3_group47_evisa/ImmigrationOfficer/ImmigrationOfficerDashboardController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ms3_group47_evisa/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ms3_group47_evisa/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/ms3_group47_evisa/ApplicationIntakeOfficer/Application.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/ms3_group47_evisa/ApplicationIntakeOfficer/Application.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/ms3_group47_evisa/ApplicationIntakeOfficer/ApplicationIntakeOfficerDashboard.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/ms3_group47_evisa/ApplicationIntakeOfficer/ApplicationIntakeOfficerDashboard.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/ms3_group47_evisa/ApplicationIntakeOfficer/CategorizeApplications.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/ms3_group47_evisa/ApplicationIntakeOfficer/CategorizeApplications.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/ms3_group47_evisa/ApplicationIntakeOfficer/ForwardApplication.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/ms3_group47_evisa/ApplicationIntakeOfficer/ForwardApplication.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/ms3_group47_evisa/ApplicationIntakeOfficer/IdentifyErrors.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/ms3_group47_evisa/ApplicationIntakeOfficer/IdentifyErrors.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/ms3_group47_evisa/ImmigrationOfficer/ImmigrationOfficerDashboard.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/ms3_group47_evisa/ImmigrationOfficer/ImmigrationOfficerDashboard.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/ms3_group47_evisa/ImmigrationOfficer/ImmigrationReview.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/ms3_group47_evisa/ImmigrationOfficer/ImmigrationReview.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/ms3_group47_evisa/Login.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/ms3_group47_evisa/Login.fxml" afterDir="false" />
-    </list>
+    <list default="true" id="e6b27a6c-3d90-4588-9336-db93faab6837" name="Changes" comment="Merge remote-tracking branch 'origin/master'&#10;&#10;# Conflicts:&#10;#&#9;src/main/java/com/example/ms3_group47_evisa/ApplicationIntakeOfficer/ApplicationIntakeOfficerDashboardController.java&#10;#&#9;src/main/java/com/example/ms3_group47_evisa/CustomerSupportAgency/CustomerSupportAgencyDashboardController.java&#10;#&#9;src/main/java/com/example/ms3_group47_evisa/CustomerSupportAgency/RespondToTicketController.java&#10;#&#9;src/main/resources/com/example/ms3_group47_evisa/ApplicationIntakeOfficer/ApplicationIntakeOfficerDashboard.fxml" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -108,7 +71,19 @@
       <option name="presentableId" value="Default" />
       <updated>1755178014198</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Merge remote-tracking branch 'origin/master'&#10;&#10;# Conflicts:&#10;#&#9;src/main/java/com/example/ms3_group47_evisa/ApplicationIntakeOfficer/ApplicationIntakeOfficerDashboardController.java&#10;#&#9;src/main/java/com/example/ms3_group47_evisa/CustomerSupportAgency/CustomerSupportAgencyDashboardController.java&#10;#&#9;src/main/java/com/example/ms3_group47_evisa/CustomerSupportAgency/RespondToTicketController.java&#10;#&#9;src/main/resources/com/example/ms3_group47_evisa/ApplicationIntakeOfficer/ApplicationIntakeOfficerDashboard.fxml">
+      <option name="closed" value="true" />
+      <created>1755287955115</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1755287955115</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Merge remote-tracking branch 'origin/master'&#10;&#10;# Conflicts:&#10;#&#9;src/main/java/com/example/ms3_group47_evisa/ApplicationIntakeOfficer/ApplicationIntakeOfficerDashboardController.java&#10;#&#9;src/main/java/com/example/ms3_group47_evisa/CustomerSupportAgency/CustomerSupportAgencyDashboardController.java&#10;#&#9;src/main/java/com/example/ms3_group47_evisa/CustomerSupportAgency/RespondToTicketController.java&#10;#&#9;src/main/resources/com/example/ms3_group47_evisa/ApplicationIntakeOfficer/ApplicationIntakeOfficerDashboard.fxml" />
+    <option name="LAST_COMMIT_MESSAGE" value="Merge remote-tracking branch 'origin/master'&#10;&#10;# Conflicts:&#10;#&#9;src/main/java/com/example/ms3_group47_evisa/ApplicationIntakeOfficer/ApplicationIntakeOfficerDashboardController.java&#10;#&#9;src/main/java/com/example/ms3_group47_evisa/CustomerSupportAgency/CustomerSupportAgencyDashboardController.java&#10;#&#9;src/main/java/com/example/ms3_group47_evisa/CustomerSupportAgency/RespondToTicketController.java&#10;#&#9;src/main/resources/com/example/ms3_group47_evisa/ApplicationIntakeOfficer/ApplicationIntakeOfficerDashboard.fxml" />
   </component>
 </project>

@@ -94,7 +94,7 @@ public class ApplicationController
         try{
             if (file.exists()){
                 fos = new FileOutputStream(file,true);
-                oos = new AppendableObjectOutputStream(fos);
+                oos = new AppendableObjectOutputStream(oos);
             }else{
                 fos = new FileOutputStream(file,true);
                 oos = new ObjectOutputStream(fos);

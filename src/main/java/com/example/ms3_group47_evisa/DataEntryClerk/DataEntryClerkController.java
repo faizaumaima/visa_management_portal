@@ -6,15 +6,14 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
-public class DataEntryClerkController
-{
+public class DataEntryClerkController {
     @javafx.fxml.FXML
     public void initialize() {
     }
 
     @javafx.fxml.FXML
     public void addnewappicationonaction(ActionEvent actionEvent) {
-        try{
+        try {
             FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("ApplicationIntakeOffice/ApplicationVerification.fxml"));
             Scene scene = new Scene(fxmlLoader.load());
             Stage stage = new Stage();
@@ -28,7 +27,7 @@ public class DataEntryClerkController
 
     @javafx.fxml.FXML
     public void logoutonaction(ActionEvent actionEvent) {
-        try{
+        try {
             FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("DataEntryClerk/Logout .fxml"));
             Scene scene = new Scene(fxmlLoader.load());
             Stage stage = new Stage();
@@ -36,6 +35,7 @@ public class DataEntryClerkController
             stage.setScene(scene);
             stage.show();
         } catch (Exception e) {
-           ///
+            ///
         }
     }
+}
