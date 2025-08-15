@@ -2,9 +2,13 @@ package com.example.ms3_group47_evisa;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
+import javafx.scene.Node;
+import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
+
+import java.io.IOException;
 
 public class LoginController {
     @javafx.fxml.FXML
@@ -30,23 +34,20 @@ public class LoginController {
         }
     }
 
-    @Deprecated
-    public void createaccountOnaction(ActionEvent actionEvent) {
-    }
-
-    @Deprecated
-    public void createAccountOnAction(ActionEvent actionEvent) {
-    }
-
-    @Deprecated
-    public void loginOnAction(ActionEvent actionEvent) {
-    }
-
     @javafx.fxml.FXML
     public void handleLoginOnAction(ActionEvent actionEvent) {
     }
 
     @javafx.fxml.FXML
-    public void handleCreateAccountOnAction(ActionEvent actionEvent) {
+    public void handleCreateAccountOnAction(ActionEvent actionEvent) throws IOException {
+        Parent root = null ;
+        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("CreateAccountPage.fxml"));
+        root = fxmlLoader.load();
+
+        Scene scene = new Scene(root) ;
+        Stage stage = (Stage)((Node)actionEvent.getSource()).getScene().getWindow();
+        stage.setScene(scene);
+        stage.setTitle("Create Account");
+        stage.show();
     }
 }
