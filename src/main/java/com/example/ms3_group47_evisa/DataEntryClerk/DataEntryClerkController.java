@@ -29,7 +29,7 @@ public class DataEntryClerkController
     @javafx.fxml.FXML
     public void logoutonaction(ActionEvent actionEvent) {
         try{
-            FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("DataEntryClerk/Logout.fxml"));
+            FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("DataEntryClerk/Logout .fxml"));
             Scene scene = new Scene(fxmlLoader.load());
             Stage stage = new Stage();
             stage.setTitle("Hello!");

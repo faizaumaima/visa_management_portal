@@ -32,7 +32,7 @@
             <Button mnemonicParsing="false" onAction="#handleApproveRefindsOnAction" text="Approve Refnds" />
             <Button mnemonicParsing="false" onAction="#handleUpdateFinancialStatusOnAction" text="Update Financial Status" />
             <Button mnemonicParsing="false" onAction="#handleLogoutOnAction" text="Logout" />
-         </children>
+         </childr
       </VBox>
    </left>
    <center>
