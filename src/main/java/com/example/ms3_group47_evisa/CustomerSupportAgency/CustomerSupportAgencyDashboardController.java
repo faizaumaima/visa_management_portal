@@ -55,9 +55,9 @@ public class CustomerSupportAgencyDashboardController {
     }
 
     @javafx.fxml.FXML
-    public void handleViewSupportTicketsOnAction(ActionEvent actionEvent) {
+    public void handleSupportTicketOnAction(ActionEvent actionEvent) {
         try{
-            FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("CustomerSupportAgency/ViewSupportTickets.fxml"));
+            FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("CustomerSupportAgency/SupportTicket.fxml"));
             Scene scene = new Scene(fxmlLoader.load());
             Stage stage = new Stage();
             stage.setTitle("Hello!");
@@ -72,6 +72,20 @@ public class CustomerSupportAgencyDashboardController {
     public void markAsResolvedOnAction(ActionEvent actionEvent) {
         try{
             FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("CustomerSupportAgency/MarkAsResolved.fxml"));
+            Scene scene = new Scene(fxmlLoader.load());
+            Stage stage = new Stage();
+            stage.setTitle("Hello!");
+            stage.setScene(scene);
+            stage.show();
+        } catch (Exception e) {
+            ///
+        }
+    }
+
+    @Deprecated
+    public void handleSupportTicketsOnAction(ActionEvent actionEvent) {
+        try {
+            FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("CustomerSupportAgency/SupportTicket.fxml"));
             Scene scene = new Scene(fxmlLoader.load());
             Stage stage = new Stage();
             stage.setTitle("Hello!");

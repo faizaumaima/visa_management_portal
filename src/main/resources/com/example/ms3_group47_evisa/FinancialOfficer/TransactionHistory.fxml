@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.TransactionHistoryController" prefWidth="800" prefHeight="600">
+    <children>
+        <Label text="Transaction History" layoutX="300" layoutY="20" style="-fx-font-size: 24px; -fx-font-weight: bold;" />
+
+        <TableView fx:id="transactionTable" layoutX="50" layoutY="70" prefWidth="700" prefHeight="450">
+            <columns>
+                <TableColumn fx:id="idColumn" text="Transaction ID" prefWidth="120"/>
+                <TableColumn fx:id="dateColumn" text="Date" prefWidth="150"/>
+                <TableColumn fx:id="userColumn" text="User" prefWidth="150"/>
+                <TableColumn fx:id="amountColumn" text="Amount" prefWidth="120"/>
+                <TableColumn fx:id="statusColumn" text="Status" prefWidth="150"/>
+            </columns>
+        </TableView>
+
+        <Button text="Refresh" layoutX="350" layoutY="540" onAction="#handleRefresh"/>
+    </children>
+</AnchorPane>

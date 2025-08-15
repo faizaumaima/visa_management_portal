@@ -8,8 +8,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ms3_group47_evisa.DataEntryClerk.DataEntryClerkController">
    <top>
       <VBox prefHeight="104.0" prefWidth="600.0" BorderPane.alignment="CENTER">
          <children>
@@ -27,11 +26,11 @@
             <Insets top="20.0" />
          </padding>
          <children>
-            <Button mnemonicParsing="false" text="Add New Application" />
+            <Button mnemonicParsing="false" onAction="#addnewappicationonaction" text="Add New Application" />
             <Button mnemonicParsing="false" text="Edit Application" />
             <Button mnemonicParsing="false" text="View All Application" />
             <Button mnemonicParsing="false" text="Submit Application" />
-            <Button mnemonicParsing="false" text="Logout" />
+            <Button mnemonicParsing="false" onAction="#logoutonaction" text="Logout" />
          </children>
       </VBox>
    </left>

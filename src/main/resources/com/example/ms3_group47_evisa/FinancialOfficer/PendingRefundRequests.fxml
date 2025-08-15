@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.ms3_group47_evisa.FinancialOfficer.RefundRequestsController">
+
+    <!-- Title -->
+    <top>
+        <Label text="Pending Refund Requests"
+               style="-fx-font-size: 20px; -fx-font-weight: bold;"
+               BorderPane.alignment="CENTER"/>
+    </top>
+
+    <!-- Main Content -->
+    <center>
+        <VBox spacing="10" alignment="CENTER_LEFT">
+            <padding>
+                <Insets top="20" right="20" bottom="20" left="20"/>
+            </padding>
+
+            <!-- Refund ID Search -->
+            <HBox spacing="10">
+                <Label text="Refund ID:"/>
+                <TextField fx:id="txtRefundId" promptText="Enter Refund ID"/>
+                <Button text="Search" fx:id="btnSearch" onAction="#onSearch"/>
+            </HBox>
+
+            <!-- Date Filter -->
+            <HBox spacing="10">
+                <Label text="From:"/>
+                <DatePicker fx:id="dateFrom"/>
+                <Label text="To:"/>
+                <DatePicker fx:id="dateTo"/>
+                <Button text="Filter" fx:id="btnFilter" onAction="#onFilter"/>
+            </HBox>
+
+            <!-- Table of Refund Requests -->
+            <TableView fx:id="tableRefunds" prefHeight="250" prefWidth="600">
+                <columns>
+                    <TableColumn text="Refund ID" prefWidth="100"/>
+                    <TableColumn text="Applicant" prefWidth="150"/>
+                    <TableColumn text="Amount" prefWidth="100"/>
+                    <TableColumn text="Date" prefWidth="150"/>
+                    <TableColumn text="Status" prefWidth="100"/>
+                </columns>
+            </TableView>
+
+            <!-- Action Buttons -->
+            <HBox spacing="10">
+                <Button text="View Details" fx:id="btnViewDetails" onAction="#onViewDetails"/>
+                <Button text="Approve Refund" fx:id="btnApprove" onAction="#onApprove"
+                        style="-fx-background-color: #4CAF50; -fx-text-fill: white;"/>
+                <Button text="Reject Refund" fx:id="btnReject" onAction="#onReject"
+                        style="-fx-background-color: #f44336; -fx-text-fill: white;"/>
+            </HBox>
+        </VBox>
+    </center>
+
+</BorderPane>
