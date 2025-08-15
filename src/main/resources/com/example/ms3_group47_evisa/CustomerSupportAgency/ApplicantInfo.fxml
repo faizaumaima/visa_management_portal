@@ -79,5 +79,6 @@
             <Button mnemonicParsing="false" onAction="#handleBack" text="Back" />
          </children>
       </HBox>
+      <Label fx:id="outputlabel" prefHeight="26.0" prefWidth="154.0" />
    </children>
 </VBox>
