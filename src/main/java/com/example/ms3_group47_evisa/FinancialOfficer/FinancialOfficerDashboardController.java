@@ -6,8 +6,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
-public class FinancialOfficerDashboardController
-{
+public class FinancialOfficerDashboardController {
     @javafx.fxml.FXML
     public void initialize() {
 
@@ -54,7 +53,7 @@ public class FinancialOfficerDashboardController
     } catch (Exception e) {
         ///
     }
-    }
+}
 
     @javafx.fxml.FXML
     public void aprproverefindsonaction(ActionEvent actionEvent) {
@@ -68,7 +67,7 @@ public class FinancialOfficerDashboardController
     } catch (Exception e) {
         ///
     }
-    }
+  }
 
     @javafx.fxml.FXML
     public void verifytranscationsonaction(ActionEvent actionEvent) {
