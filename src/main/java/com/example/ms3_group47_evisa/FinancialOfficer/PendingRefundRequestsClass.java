@@ -1,6 +1,6 @@
 package com.example.ms3_group47_evisa.FinancialOfficer;
 
-public class PendingRefundRequestsClass {
+public class PendingRefundRequestsClass{
         private int requestId;
         private String customerName;
         private double refundAmount;
