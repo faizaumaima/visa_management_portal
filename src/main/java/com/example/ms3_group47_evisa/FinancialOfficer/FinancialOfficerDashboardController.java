@@ -18,7 +18,7 @@ public class FinancialOfficerDashboardController {
             this.date = date;
         }
 
-        // Getter & Setter
+
         public String getTransactionId() { return transactionId; }
         public void setTransactionId(String transactionId) { this.transactionId = transactionId; }
 
