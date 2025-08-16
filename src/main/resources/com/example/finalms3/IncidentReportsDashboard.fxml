@@ -16,29 +16,37 @@
             <Font size="36.0" />
          </font>
       </Label>
-      <Button layoutX="31.0" layoutY="144.0" mnemonicParsing="false" text="Reports">
+      <Button fx:id="reportsButton" layoutX="31.0" layoutY="144.0" mnemonicParsing="false" text="Reports" onAction="#onReportsClick">
          <font>
             <Font size="14.0" />
          </font>
       </Button>
-      <Button layoutX="671.0" layoutY="25.0" mnemonicParsing="false" text="Back" />
+      
+      <!-- Missing fields for Java controller -->
+      <TextField fx:id="searchTextField" layoutX="31.0" layoutY="200.0" prefWidth="150.0" promptText="Search incidents..." />
+      <ComboBox fx:id="statusFilterComboBox" layoutX="31.0" layoutY="230.0" prefWidth="150.0" promptText="Filter by status" />
+      <ComboBox fx:id="severityFilterComboBox" layoutX="31.0" layoutY="260.0" prefWidth="150.0" promptText="Filter by severity" />
+      <Button fx:id="refreshButton" layoutX="31.0" layoutY="290.0" mnemonicParsing="false" text="Refresh" onAction="#onRefreshClick" />
+      <Button fx:id="exportButton" layoutX="31.0" layoutY="320.0" mnemonicParsing="false" text="Export" onAction="#onExportClick" />
+      <TextArea fx:id="detailsTextArea" layoutX="31.0" layoutY="350.0" prefHeight="200.0" prefWidth="150.0" promptText="Incident details will appear here..." />
+      <Button fx:id="backButton" layoutX="671.0" layoutY="25.0" mnemonicParsing="false" text="Back" onAction="#onBackClick" />
       <AnchorPane layoutX="211.0" layoutY="154.0" prefHeight="382.0" prefWidth="536.0">
          <children>
             <Label layoutX="23.0" layoutY="24.0" text="Incident ID:" />
-            <TableView layoutY="78.0" prefHeight="200.0" prefWidth="536.0">
+            <TableView fx:id="incidentTableView" layoutY="78.0" prefHeight="200.0" prefWidth="536.0">
               <columns>
-                <TableColumn prefWidth="43.99998474121094" text="ID" />
-                <TableColumn prefWidth="58.40000915527344" text="Date" />
-                  <TableColumn prefWidth="70.4000244140625" text="Location" />
-                  <TableColumn prefWidth="103.99993896484375" text="Incident Type" />
-                  <TableColumn prefWidth="100.00006103515625" text="Severity" />
-                  <TableColumn prefWidth="75.0" text="Reported By" />
-                  <TableColumn prefWidth="84.00006103515625" text="Description" />
+                <TableColumn fx:id="idColumn" prefWidth="43.99998474121094" text="ID" />
+                <TableColumn fx:id="dateColumn" prefWidth="58.40000915527344" text="Date" />
+                  <TableColumn fx:id="locationColumn" prefWidth="70.4000244140625" text="Location" />
+                  <TableColumn fx:id="incidentTypeColumn" prefWidth="103.99993896484375" text="Incident Type" />
+                  <TableColumn fx:id="severityColumn" prefWidth="100.00006103515625" text="Severity" />
+                  <TableColumn fx:id="reportedByColumn" prefWidth="75.0" text="Reported By" />
+                  <TableColumn fx:id="descriptionColumn" prefWidth="84.00006103515625" text="Description" />
               </columns>
             </TableView>
-            <Button layoutX="447.0" layoutY="29.0" mnemonicParsing="false" text="Load" />
-            <Button layoutX="395.0" layoutY="315.0" mnemonicParsing="false" text="Detailed View" />
-            <TextField layoutX="95.0" layoutY="20.0" />
+            <Button fx:id="loadButton" layoutX="447.0" layoutY="29.0" mnemonicParsing="false" text="Load" onAction="#onLoadClick" />
+            <Button fx:id="detailedViewButton" layoutX="395.0" layoutY="315.0" mnemonicParsing="false" text="Detailed View" onAction="#onDetailedViewClick" />
+            <TextField fx:id="incidentIdField" layoutX="95.0" layoutY="20.0" />
          </children>
       </AnchorPane>
    </children>

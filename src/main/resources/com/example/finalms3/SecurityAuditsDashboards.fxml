@@ -15,33 +15,33 @@
             <Font size="36.0" />
          </font>
       </Label>
-      <Button layoutX="25.0" layoutY="108.0" mnemonicParsing="false" text="Audit Report">
+      <Button fx:id="auditReportButton" layoutX="25.0" layoutY="108.0" mnemonicParsing="false" text="Audit Report" onAction="#onAuditReportClick">
          <font>
             <Font size="14.0" />
          </font>
       </Button>
-      <Button layoutX="25.0" layoutY="207.0" mnemonicParsing="false" text="System Status">
+      <Button fx:id="systemStatusButton" layoutX="25.0" layoutY="207.0" mnemonicParsing="false" text="System Status" onAction="#onSystemStatusClick">
          <font>
             <Font size="14.0" />
          </font>
       </Button>
-      <Button layoutX="765.0" layoutY="29.0" mnemonicParsing="false" text="Back" />
-      <Button layoutX="25.0" layoutY="337.0" mnemonicParsing="false" text="Protocol Updates">
+      <Button fx:id="backButton" layoutX="765.0" layoutY="29.0" mnemonicParsing="false" text="Back" onAction="#onBackClick" />
+      <Button fx:id="protocolUpdatesButton" layoutX="25.0" layoutY="337.0" mnemonicParsing="false" text="Protocol Updates" onAction="#onProtocolUpdatesClick">
          <font>
             <Font size="14.0" />
          </font>
       </Button>
       <AnchorPane layoutX="233.0" layoutY="150.0" prefHeight="330.0" prefWidth="610.0">
          <children>
-            <Label layoutX="12.0" layoutY="22.0" text="Label" />
-            <Button layoutX="476.0" layoutY="18.0" mnemonicParsing="false" text="Load" />
-            <TableView layoutX="12.0" layoutY="65.0" prefHeight="200.0" prefWidth="591.0">
+            <Label layoutX="12.0" layoutY="22.0" text="Security Audits" />
+            <Button fx:id="loadButton" layoutX="476.0" layoutY="18.0" mnemonicParsing="false" text="Load" onAction="#onLoadClick" />
+            <TableView fx:id="securityAuditsTableView" layoutX="12.0" layoutY="65.0" prefHeight="200.0" prefWidth="591.0">
               <columns>
-                <TableColumn prefWidth="64.79997253417969" text="ID" />
-                <TableColumn prefWidth="110.4000244140625" text="Security Area" />
-                  <TableColumn prefWidth="78.39996337890625" text="Status" />
-                  <TableColumn prefWidth="155.20001220703125" text="Last Inspection Data" />
-                  <TableColumn prefWidth="183.99993896484375" text="Nest scheduled Audit Date" />
+                <TableColumn fx:id="idColumn" prefWidth="64.79997253417969" text="ID" />
+                <TableColumn fx:id="securityAreaColumn" prefWidth="110.4000244140625" text="Security Area" />
+                  <TableColumn fx:id="statusColumn" prefWidth="78.39996337890625" text="Status" />
+                  <TableColumn fx:id="lastInspectionDateColumn" prefWidth="155.20001220703125" text="Last Inspection Data" />
+                  <TableColumn fx:id="nextScheduledAuditDateColumn" prefWidth="183.99993896484375" text="Next scheduled Audit Date" />
               </columns>
             </TableView>
          </children>

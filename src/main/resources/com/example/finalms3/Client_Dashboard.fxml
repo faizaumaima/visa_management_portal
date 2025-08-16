@@ -13,12 +13,12 @@
             <Font size="36.0" />
          </font>
       </Label>
-      <Button layoutX="57.0" layoutY="138.0" mnemonicParsing="false" prefHeight="126.0" prefWidth="140.0" text="My Application" />
-      <Button layoutX="332.0" layoutY="138.0" mnemonicParsing="false" prefHeight="126.0" prefWidth="140.0" text="Citizen Services" />
-      <Button layoutX="591.0" layoutY="138.0" mnemonicParsing="false" prefHeight="126.0" prefWidth="140.0" text="Events" />
-      <Button layoutX="57.0" layoutY="363.0" mnemonicParsing="false" prefHeight="126.0" prefWidth="140.0" text="Medical Travel Guide" />
-      <Button layoutX="341.0" layoutY="363.0" mnemonicParsing="false" prefHeight="126.0" prefWidth="140.0" text="Assistance" />
-      <Button layoutX="602.0" layoutY="350.0" mnemonicParsing="false" prefHeight="126.0" prefWidth="140.0" text="Passport Services" />
-      <Button layoutX="716.0" layoutY="29.0" mnemonicParsing="false" text="Sing Out" />
+      <Button fx:id="myApplicationButton" layoutX="57.0" layoutY="138.0" mnemonicParsing="false" prefHeight="126.0" prefWidth="140.0" text="My Application" onAction="#onMyApplicationClick" />
+      <Button fx:id="citizenServicesButton" layoutX="332.0" layoutY="138.0" mnemonicParsing="false" prefHeight="126.0" prefWidth="140.0" text="Citizen Services" onAction="#onCitizenServicesClick" />
+      <Button fx:id="eventsButton" layoutX="591.0" layoutY="138.0" mnemonicParsing="false" prefHeight="126.0" prefWidth="140.0" text="Events" onAction="#onEventsClick" />
+      <Button fx:id="medicalTravelGuideButton" layoutX="57.0" layoutY="363.0" mnemonicParsing="false" prefHeight="126.0" prefWidth="140.0" text="Medical Travel Guide" onAction="#onMedicalTravelGuideClick" />
+      <Button fx:id="assistanceButton" layoutX="341.0" layoutY="363.0" mnemonicParsing="false" prefHeight="126.0" prefWidth="140.0" text="Assistance" onAction="#onAssistanceClick" />
+      <Button fx:id="passportServicesButton" layoutX="602.0" layoutY="350.0" mnemonicParsing="false" prefHeight="126.0" prefWidth="140.0" text="Passport Services" onAction="#onPassportServicesClick" />
+      <Button fx:id="signOutButton" layoutX="716.0" layoutY="29.0" mnemonicParsing="false" text="Sign Out" onAction="#onSignOutClick" />
    </children>
 </AnchorPane>

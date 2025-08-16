@@ -16,24 +16,24 @@
             <Font size="36.0" />
          </font>
       </Label>
-      <Button layoutX="36.0" layoutY="140.0" mnemonicParsing="false" text="Emergency Plan" />
-      <Button layoutX="36.0" layoutY="279.0" mnemonicParsing="false" text="Access Control" />
-      <Button layoutX="36.0" layoutY="426.0" mnemonicParsing="false" text="Evaluation" />
-      <Button layoutX="672.0" layoutY="23.0" mnemonicParsing="false" text="Back" />
+      <Button fx:id="emergencyPlanButton" layoutX="36.0" layoutY="140.0" mnemonicParsing="false" text="Emergency Plan" onAction="#onEmergencyPlanClick" />
+      <Button fx:id="accessControlButton" layoutX="36.0" layoutY="279.0" mnemonicParsing="false" text="Access Control" onAction="#onAccessControlClick" />
+      <Button fx:id="evaluationButton" layoutX="36.0" layoutY="426.0" mnemonicParsing="false" text="Evaluation" onAction="#onEvaluationClick" />
+      <Button fx:id="backButton" layoutX="672.0" layoutY="23.0" mnemonicParsing="false" text="Back" onAction="#onBackClick" />
       <AnchorPane layoutX="216.0" layoutY="155.0" prefHeight="445.0" prefWidth="538.0">
          <children>
-            <TableView layoutX="1.0" layoutY="123.0" prefHeight="200.0" prefWidth="531.0">
+            <TableView fx:id="controlSystemsTableView" layoutX="1.0" layoutY="123.0" prefHeight="200.0" prefWidth="531.0">
               <columns>
-                <TableColumn prefWidth="64.80006408691406" text="Code" />
-                  <TableColumn prefWidth="129.5999755859375" text="Emergency situation" />
-                  <TableColumn prefWidth="129.60003662109375" text="Response Actions" />
-                  <TableColumn prefWidth="104.7999267578125" text="Response Team" />
-                  <TableColumn prefWidth="104.7999267578125" text="Last Updated" />
+                <TableColumn fx:id="codeColumn" prefWidth="64.80006408691406" text="Code" />
+                  <TableColumn fx:id="emergencySituationColumn" prefWidth="129.5999755859375" text="Emergency situation" />
+                  <TableColumn fx:id="responseActionsColumn" prefWidth="129.60003662109375" text="Response Actions" />
+                  <TableColumn fx:id="responseTeamColumn" prefWidth="104.7999267578125" text="Response Team" />
+                  <TableColumn fx:id="lastUpdatedColumn" prefWidth="104.7999267578125" text="Last Updated" />
               </columns>
             </TableView>
             <Label layoutX="14.0" layoutY="35.0" text="Plan Code:" />
-            <Button layoutX="460.0" layoutY="33.0" mnemonicParsing="false" text="Load" />
-            <TextField layoutX="80.0" layoutY="31.0" />
+            <Button fx:id="loadButton" layoutX="460.0" layoutY="33.0" mnemonicParsing="false" text="Load" onAction="#onLoadClick" />
+            <TextField fx:id="planCodeField" layoutX="80.0" layoutY="31.0" />
          </children>
       </AnchorPane>
    </children>
