@@ -1,72 +1,39 @@
 package com.example.ms3_group47_evisa.FinancialOfficer;
-public class PendingRefundRequests{
 
-public class PendingRefundRequestsClass{
-        private int requestId;
-        private String customerName;
-        private double refundAmount;
-        private String reason;
-        private String status;
+public class PendingRefundRequestsClass {
+    private String requestId,CustomerName,doubleAmount,status;
 
+    public PendingRefundRequestsClass(String requestId, String customerName, String doubleAmount, String status) {
+        this.requestId = requestId;
+        CustomerName = customerName;
+        this.doubleAmount = doubleAmount;
+        this.status = status;
 
-        public void PendingRefundRequest(int requestId, String customerName, double refundAmount, String reason, String status) {
-            this.requestId = requestId;
-            this.customerName = customerName;
-            this.refundAmount = refundAmount;
-            this.reason = reason;
-            this.status = status;
-        }
-
-
-        public int getRequestId() {
-            return requestId;
-        }
-
-        public void setRequestId(int requestId) {
-            this.requestId = requestId;
-        }
-
-        public String getCustomerName() {
-            return customerName;
-        }
-
-        public void setCustomerName(String customerName) {
-            this.customerName = customerName;
-        }
-
-        public double getRefundAmount() {
-            return refundAmount;
-        }
-
-        public void setRefundAmount(double refundAmount) {
-            this.refundAmount = refundAmount;
-        }
-
-        public String getReason() {
-            return reason;
-        }
-
-        public void setReason(String reason) {
-            this.reason = reason;
-        }
-
-        public String getStatus() {
-            return status;
-        }
-
-        public void setStatus(String status) {
-            this.status = status;
-        }
-        @Override
-        public String toString() {
-            return "PendingRefundRequest{" +
-                    "requestId=" + requestId +
-                    ", customerName='" + customerName + '\'' +
-                    ", refundAmount=" + refundAmount +
-                    ", reason='" + reason + '\'' +
-                    ", status='" + status + '\'' +
-                    '}';
-        }
     }
-    
+
+    public String getRequestId() {
+        return requestId;
+    }
+
+    public String getCustomerName() {
+        return CustomerName;
+    }
+
+    public String getDoubleAmount() {
+        return doubleAmount;
+    }
+
+    public String getStatus() {
+        return status;
+    }
+
+    @Override
+    public String toString() {
+        return "PendingRefundRequestsClass{" +
+                "requestId='" + requestId + '\'' +
+                ", CustomerName='" + CustomerName + '\'' +
+                ", doubleAmount='" + doubleAmount + '\'' +
+                ", status='" + status + '\'' +
+                '}';
+    }
 }
