@@ -18,7 +18,7 @@ public class NewApplicantEntryClass {
             this.status = status;
         }
 
-        // Getter & Setter
+
         public String getApplicantId() { return applicantId; }
         public void setApplicantId(String applicantId) { this.applicantId = applicantId; }
 
