@@ -4,17 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e6b27a6c-3d90-4588-9336-db93faab6837" name="Changes" comment="Merge remote-tracking branch 'origin/master'&#10;&#10;# Conflicts:&#10;#&#9;src/main/java/com/example/ms3_group47_evisa/ApplicationIntakeOfficer/ApplicationIntakeOfficerDashboardController.java&#10;#&#9;src/main/java/com/example/ms3_group47_evisa/CustomerSupportAgency/CustomerSupportAgencyDashboardController.java&#10;#&#9;src/main/java/com/example/ms3_group47_evisa/CustomerSupportAgency/RespondToTicketController.java&#10;#&#9;src/main/resources/com/example/ms3_group47_evisa/ApplicationIntakeOfficer/ApplicationIntakeOfficerDashboard.fxml">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ms3_group47_evisa/CustomerSupportAgency/ApplicantInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ms3_group47_evisa/CustomerSupportAgency/ApplicantInfo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ms3_group47_evisa/CustomerSupportAgency/RespondToTicketController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ms3_group47_evisa/CustomerSupportAgency/RespondToTicketController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ms3_group47_evisa/CustomerSupportAgency/SupportTicket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ms3_group47_evisa/CustomerSupportAgency/SupportTicket.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ms3_group47_evisa/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ms3_group47_evisa/HelloApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ms3_group47_evisa/VisaOfficer/CheckDocument.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ms3_group47_evisa/VisaOfficer/CheckDocument.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ms3_group47_evisa/VisaOfficer/MarkAsEligible.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ms3_group47_evisa/VisaOfficer/MarkAsEligible.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/ms3_group47_evisa/VisaOfficer/ViewPendingApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/ms3_group47_evisa/VisaOfficer/ViewPendingApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
-    </list>
+    <list default="true" id="e6b27a6c-3d90-4588-9336-db93faab6837" name="Changes" comment="Merge remote-tracking branch 'origin/master'&#10;&#10;# Conflicts:&#10;#&#9;src/main/java/com/example/ms3_group47_evisa/ApplicationIntakeOfficer/ApplicationIntakeOfficerDashboardController.java&#10;#&#9;src/main/java/com/example/ms3_group47_evisa/CustomerSupportAgency/CustomerSupportAgencyDashboardController.java&#10;#&#9;src/main/java/com/example/ms3_group47_evisa/CustomerSupportAgency/RespondToTicketController.java&#10;#&#9;src/main/resources/com/example/ms3_group47_evisa/ApplicationIntakeOfficer/ApplicationIntakeOfficerDashboard.fxml" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -113,7 +103,15 @@
       <option name="project" value="LOCAL" />
       <updated>1755326219951</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Merge remote-tracking branch 'origin/master'&#10;&#10;# Conflicts:&#10;#&#9;src/main/java/com/example/ms3_group47_evisa/ApplicationIntakeOfficer/ApplicationIntakeOfficerDashboardController.java&#10;#&#9;src/main/java/com/example/ms3_group47_evisa/CustomerSupportAgency/CustomerSupportAgencyDashboardController.java&#10;#&#9;src/main/java/com/example/ms3_group47_evisa/CustomerSupportAgency/RespondToTicketController.java&#10;#&#9;src/main/resources/com/example/ms3_group47_evisa/ApplicationIntakeOfficer/ApplicationIntakeOfficerDashboard.fxml">
+      <option name="closed" value="true" />
+      <created>1755328722722</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1755328722722</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
