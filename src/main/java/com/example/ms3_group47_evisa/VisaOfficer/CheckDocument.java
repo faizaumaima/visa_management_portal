@@ -8,23 +8,28 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
+import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.stage.Stage;
 
 public class CheckDocument
 {
     @javafx.fxml.FXML
-    private TableColumn columnDocumentType;
+    private TableColumn<VisaOfficerClass, String> columnDocumentType;
     @javafx.fxml.FXML
-    private TableColumn columnStatus;
+    private TableColumn<VisaOfficerClass, String> columnStatus;
     @javafx.fxml.FXML
-    private TableView tableViewDocuments;
+    private TableView<VisaOfficerClass> tableViewDocuments;
     @javafx.fxml.FXML
-    private TableColumn columnDocumentName;
+    private TableColumn<VisaOfficerClass, String> columnDocumentName;
     @javafx.fxml.FXML
     private Label outputlabel;
 
     @javafx.fxml.FXML
     public void initialize() {
+        tableViewDocuments.getItems().addAll("documentname", "documenttype", "columnstatus");
+        columnDocumentType.setCellValueFactory(new PropertyValueFactory<>("documenttype"));
+        columnStatus.setCellValueFactory(new PropertyValueFactory<>("status"));
+        columnDocumentName.setCellValueFactory(new PropertyValueFactory<>("documentname"));
     }
 
     @javafx.fxml.FXML
@@ -33,12 +38,10 @@ public class CheckDocument
 
     @javafx.fxml.FXML
     public void buttonMarkInvalidOnAction(ActionEvent actionEvent) {
-        if (columnDocumentName.isVisible()){
-            outputlabel.setText("Rejecte");
-        }else if (columnDocumentType.isVisible()){
-            outputlabel.setText("Approved");
-        }else{
-            outputlabel.setText("Select a decision");
+        if (columnDocumentName.getText()==null) {
+            outputlabel.setText("Invalid: No document selected!")
+        }else {
+            outputlabel.setText("Please Select a document First");
             return;
         }
     }
@@ -59,8 +62,7 @@ public class CheckDocument
 
     @javafx.fxml.FXML
     public void markasValidOnAction(ActionEvent actionEvent) {
-        if (columnDocumentName.isVisible() && columnDocumentType.isVisible() && columnStatus.isVisible()){
-            outputlabel.setText("Valid");
+
         }
     }
 }
