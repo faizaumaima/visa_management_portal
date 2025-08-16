@@ -9,9 +9,9 @@ import javafx.scene.control.cell.PropertyValueFactory;
 public class ViewPendingApplication
 {
     @javafx.fxml.FXML
-    private TableView pendingTable;
+    private TableView<VisaOfficerClass> pendingTable;
     @javafx.fxml.FXML
-    private TableColumn colApplicationDate;
+    private TableColumn<VisaOfficerClass, String> colApplicationDate;
     @javafx.fxml.FXML
     private Button buttonViewDetails;
     @javafx.fxml.FXML
