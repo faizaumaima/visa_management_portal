@@ -46,8 +46,9 @@ public class MarkAsEligible
 
     @javafx.fxml.FXML
     public void handleConfirmEligibilityOnAction(ActionEvent actionEvent) {
-        if (nameTextField.isVisible() && visaTypeTextField.isVisible() && statusTextField.isVisible()){
-            outputlabel.setText("Confirmed Eligible");
+        if (textFieldApplicationId.getText().trim().isEmpty()){
+            outputlabel.setText("Enter ID:");
+            return;
         }
     }
 }

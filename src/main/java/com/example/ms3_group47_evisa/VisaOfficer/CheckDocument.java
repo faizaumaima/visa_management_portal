@@ -62,8 +62,7 @@ public class CheckDocument
 
     @javafx.fxml.FXML
     public void markasValidOnAction(ActionEvent actionEvent) {
-        if (columnDocumentName.isVisible() && columnDocumentType.isVisible() && columnStatus.isVisible()){
-            outputlabel.setText("Valid");
+
         }
     }
 }
