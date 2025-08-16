@@ -76,7 +76,7 @@
       <HBox alignment="CENTER_RIGHT" prefHeight="49.0" prefWidth="560.0" spacing="10.0">
          <children>
             <Button mnemonicParsing="false" onAction="#handlePrint" text="Print" />
-            <Button mnemonicParsing="false" onAction="#handleBack" text="Back" />
+            <Button mnemonicParsing="false" onAction="#handleBackOnAction" text="Back" />
          </children>
       </HBox>
       <Label fx:id="outputlabel" prefHeight="26.0" prefWidth="154.0" />

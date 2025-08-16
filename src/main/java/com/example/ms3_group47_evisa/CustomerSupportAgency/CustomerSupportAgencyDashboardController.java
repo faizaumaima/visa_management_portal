@@ -81,18 +81,4 @@ public class CustomerSupportAgencyDashboardController {
             ///
         }
     }
-
-    @Deprecated
-    public void handleSupportTicketsOnAction(ActionEvent actionEvent) {
-        try {
-            FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("CustomerSupportAgency/SupportTicket.fxml"));
-            Scene scene = new Scene(fxmlLoader.load());
-            Stage stage = new Stage();
-            stage.setTitle("Hello!");
-            stage.setScene(scene);
-            stage.show();
-        } catch (Exception e) {
-            ///
-        }
-    }
 }

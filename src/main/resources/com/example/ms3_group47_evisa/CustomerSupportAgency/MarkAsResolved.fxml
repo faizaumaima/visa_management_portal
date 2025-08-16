@@ -63,8 +63,9 @@
       <HBox alignment="CENTER" prefHeight="66.0" prefWidth="560.0" spacing="10.0">
          <children>
             <Button mnemonicParsing="false" onAction="#handleMarkAsResolvedOnAction" text="Mark As Resolved" />
-            <Button mnemonicParsing="false" onAction="#handleCancelOnAction" text="Cancel" />
+            <Button mnemonicParsing="false" onAction="#handleBackOnAction" text="Back" />
          </children>
       </HBox>
+      <Label fx:id="outputlabel" prefHeight="53.0" prefWidth="230.0" />
    </children>
 </VBox>

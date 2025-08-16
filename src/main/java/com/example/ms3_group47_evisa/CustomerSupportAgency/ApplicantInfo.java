@@ -1,9 +1,13 @@
 package com.example.ms3_group47_evisa.CustomerSupportAgency;
 
+import com.example.ms3_group47_evisa.HelloApplication;
 import javafx.event.ActionEvent;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Scene;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
+import javafx.stage.Stage;
 
 import java.io.*;
 import java.util.ArrayList;
@@ -35,8 +39,6 @@ public class ApplicantInfo
 
     @javafx.fxml.FXML
     public void initialize() throws IOException {
-    }
-    public void readuser(ActionEvent actionEvent) throws IOException{
         File file = new File("applicantinfo.bin");
         try{
             FileInputStream fis = new FileInputStream(file);
@@ -54,10 +56,6 @@ public class ApplicantInfo
     }
 
     ArrayList<ApplicantClass> applicantlist = new ArrayList<>();
-
-    @javafx.fxml.FXML
-    public void handleBack(ActionEvent actionEvent) {
-    }
 
     @javafx.fxml.FXML
     public void handlePrint(ActionEvent actionEvent) throws IOException{
@@ -132,6 +130,20 @@ public class ApplicantInfo
             }
             oos.writeObject(CSA);
             oos.close();
+        } catch (Exception e) {
+            ///
+        }
+    }
+
+    @javafx.fxml.FXML
+    public void handleBackOnAction(ActionEvent actionEvent) {
+        try{
+            FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("CustomerSupportAgency/CustomerSupportAgencyDashboard.fxml"));
+            Scene scene = new Scene(fxmlLoader.load());
+            Stage stage = new Stage();
+            stage.setTitle("Hello!");
+            stage.setScene(scene);
+            stage.show();
         } catch (Exception e) {
             ///
         }

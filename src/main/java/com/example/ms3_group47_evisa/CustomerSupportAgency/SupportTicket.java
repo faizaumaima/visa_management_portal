@@ -18,13 +18,16 @@ public class SupportTicket
     @javafx.fxml.FXML
     private TableColumn colTicketId;
     @javafx.fxml.FXML
-    private Button buttonsendReply;
+    private Label outputlabel;
 
     @javafx.fxml.FXML
     public void initialize() {
     }
 
     @javafx.fxml.FXML
-    public void handleSendReply(ActionEvent actionEvent) {
+    public void handleSendReplyOnAction(ActionEvent actionEvent) {
+        if (columnApplicantName.isVisible() && columnStatus.isVisible() && tableViewTickets.isVisible() && colTicketId.isVisible()){
+            outputlabel.setText("Confirmed");
+        }
     }
 }
