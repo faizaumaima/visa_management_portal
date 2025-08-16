@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ms3_group47_evisa.ApplicationIntakeOfficer.ForwardApplicationController">
+    <padding>
+        <Insets top="20.0" />
+    </padding>
+    <top>
+        <HBox alignment="CENTER" prefHeight="45.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+            <children>
+                <Label alignment="CENTER" prefHeight="28.0" prefWidth="318.0" text="Forward Application To Immigration Officer">
+                    <font>
+                        <Font size="16.0" />
+                    </font>
+                </Label>
+            </children>
+        </HBox>
+    </top>
+    <center>
+        <VBox prefHeight="200.0" prefWidth="100.0" spacing="15.0" BorderPane.alignment="CENTER">
+            <padding>
+                <Insets top="10.0" />
+            </padding>
+            <children>
+                <Label text="Application Details">
+                    <font>
+                        <Font size="15.0" />
+                    </font>
+                </Label>
+                <TableView fx:id="applicationTable" prefHeight="110.0" prefWidth="600.0">
+                    <columns>
+                        <TableColumn fx:id="colApplicationID" prefWidth="201.33334350585938" text="Application ID" />
+                        <TableColumn fx:id="colApplicantName" prefWidth="198.6666259765625" text="Applicant Name" />
+                        <TableColumn fx:id="colStatus" prefWidth="200.6666259765625" text="Status" />
+                    </columns>
+                </TableView>
+                <Button mnemonicParsing="false" onAction="#forwardButton" text="Forward to Immigration Office" />
+                <Label text="Result:" />
+                <Label fx:id="resultlabel" prefWidth="400.0" textFill="#15b337" />
+                <HBox alignment="CENTER" prefHeight="62.0" prefWidth="600.0" spacing="10.0">
+                    <children>
+                        <Button fx:id="backonaction" mnemonicParsing="false" onAction="#backbutton" text="Back" />
+                        <Button fx:id="logoutonaction" mnemonicParsing="false" onAction="#logoutbutton" text="Logout" />
+                    </children>
+                </HBox>
+            </children>
+        </VBox>
+    </center>
+</BorderPane>

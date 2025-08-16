@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.app.finance.RefundApprovalController"
+            stylesheets="@styles.css">
+
+    <!-- Top: Title -->
+    <top>
+        <HBox spacing="12" styleClass="topbar">
+            <padding><Insets topRightBottomLeft="14"/></padding>
+            <Label text="Refund Approval" styleClass="title"/>
+            <Pane HBox.hgrow="ALWAYS"/>
+            <Label text="Pending: " styleClass="subtitle"/>
+            <Label fx:id="pendingCount" text="0" styleClass="subtitle"/>
+        </HBox>
+    </top>
+
+    <!-- Left: Filters -->
+    <left>
+        <VBox spacing="10" styleClass="sidebar">
+            <padding><Insets topRightBottomLeft="14"/></padding>
+
+            <Label text="Filters" styleClass="section"/>
+
+            <Label text="From date"/>
+            <DatePicker fx:id="fromDate"/>
+
+            <Label text="To date"/>
+            <DatePicker fx:id="toDate"/>
+
+            <Label text="Invoice / Refund ID"/>
+            <TextField fx:id="idField" promptText="e.g., RF-203 / INV-9021"/>
+
+            <Label text="Reason"/>
+            <ComboBox fx:id="reasonBox" promptText="Any"/>
+
+            <Label text="Status"/>
+            <ComboBox fx:id="statusBox" promptText="Any"/>
+
+            <HBox spacing="8">
+                <Button text="Search" onAction="#onSearch" HBox.hgrow="ALWAYS"/>
+                <Button text="Reset" onAction="#onReset" HBox.hgrow="ALWAYS"/>
+            </HBox>
+
+            <CheckBox fx:id="highAmountOnly" text="Show high-amount only"/>
+        </VBox>
+    </left>
+
+    <!-- Center: Table + Details -->
+    <center>
+        <VBox spacing="10" styleClass="content">
+            <padding><Insets topRightBottomLeft="14"/></padding>
+
+            <TableView fx:id="table">
+                <columns>
+                    <TableColumn fx:id="colRefundId" text="Refund ID" prefWidth="110"/>
+                    <TableColumn fx:id="colInvoice" text="Invoice" prefWidth="110"/>
+                    <TableColumn fx:id="colCustomer" text="Customer" prefWidth="160"/>
+                    <TableColumn fx:id="colMethod" text="Method" prefWidth="90"/>
+                    <TableColumn fx:id="colAmount" text="Amount" prefWidth="90"/>
+                    <TableColumn fx:id="colDate" text="Date" prefWidth="120"/>
+                    <TableColumn fx:id="colReason" text="Reason" prefWidth="130"/>
+                    <TableColumn fx:id="colStatus" text="Status" prefWidth="100"/>
+                </columns>
+            </TableView>
+
+            <TitledPane text="Selected Refund" expanded="true">
+                <content>
+                    <GridPane hgap="12" vgap="8">
+                        <columnConstraints>
+                            <ColumnConstraints percentWidth="20"/>
+                            <ColumnConstraints percentWidth="30"/>
+                            <ColumnConstraints percentWidth="20"/>
+                            <ColumnConstraints percentWidth="30"/>
+                        </columnConstraints>
+
+                        <Label text="Refund ID:" GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+                        <Label fx:id="dRefundId" GridPane.rowIndex="0" GridPane.columnIndex="1"/>
+
+                        <Label text="Invoice:" GridPane.rowIndex="0" GridPane.columnIndex="2"/>
+                        <Label fx:id="dInvoice" GridPane.rowIndex="0" GridPane.columnIndex="3"/>
+
+                        <Label text="Customer:" GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+                        <Label fx:id="dCustomer" GridPane.rowIndex="1" GridPane.columnIndex="1"/>
+
+                        <Label text="Method:" GridPane.rowIndex="1" GridPane.columnIndex="2"/>
+                        <Label fx:id="dMethod" GridPane.rowIndex="1" GridPane.columnIndex="3"/>
+
+                        <Label text="Amount:" GridPane.rowIndex="2" GridPane.columnIndex="0"/>
+                        <Label fx:id="dAmount" GridPane.rowIndex="2" GridPane.columnIndex="1"/>
+
+                        <Label text="Date:" GridPane.rowIndex="2" GridPane.columnIndex="2"/>
+                        <Label fx:id="dDate" GridPane.rowIndex="2" GridPane.columnIndex="3"/>
+
+                        <Label text="Reason:" GridPane.rowIndex="3" GridPane.columnIndex="0"/>
+                        <Label fx:id="dReason" GridPane.rowIndex="3" GridPane.columnIndex="1" GridPane.columnSpan="3"/>
+
+                        <Label text="Notes:" GridPane.rowIndex="4" GridPane.columnIndex="0"/>
+                        <TextArea fx:id="notes" promptText="Verification notes…"
+                                  GridPane.rowIndex="4" GridPane.columnIndex="1"
+                                  GridPane.columnSpan="3" prefRowCount="2"/>
+
+                        <HBox spacing="10" GridPane.rowIndex="5" GridPane.columnIndex="1" GridPane.columnSpan="3">
+                            <Button text="Approve Refund" onAction="#onApprove"/>
+                            <Button text="Decline Request" onAction="#onDecline"/>
+                            <Button text="Request More Info" onAction="#onNeedInfo"/>
+                        </HBox>
+                    </GridPane>
+                </content>
+            </TitledPane>
+        </VBox>
+    </center>
+
+    <!-- Bottom: Status -->
+    <bottom>
+        <HBox styleClass="statusbar">
+            <padding><Insets topRightBottomLeft="8"/></padding>
+            <Label text="Status: "/>
+            <Label fx:id="statusLabel" text="Ready"/>
+        </HBox>
+    </bottom>
+</BorderPane>

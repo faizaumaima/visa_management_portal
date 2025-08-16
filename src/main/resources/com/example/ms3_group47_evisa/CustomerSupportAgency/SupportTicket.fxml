@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="541.0" prefWidth="623.0" spacing="10.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ms3_group47_evisa.CustomerSupportAgency.SupportTicket">
+   <padding>
+      <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+   </padding>
+   <children>
+      <Label text="Support Ticket Ticket Dashboard">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tableViewTickets" prefHeight="135.0" prefWidth="570.0">
+        <columns>
+          <TableColumn fx:id="colTicketId" prefWidth="113.59997862577438" text="Ticket ID" />
+          <TableColumn fx:id="columnApplicantName" prefWidth="236.80003356933594" text="Applicant Name" />
+            <TableColumn fx:id="columnStatus" prefWidth="218.4000244140625" text="Status" />
+        </columns>
+      </TableView>
+      <Label text="Applicant Message:" />
+      <TextArea fx:id="textAreaApplicationMessage" prefHeight="65.0" prefWidth="570.0" />
+      <Label text="Your Reply:" />
+      <TextArea fx:id="textAreaReply" prefHeight="60.0" prefWidth="593.0" promptText="Type your reply here..." />
+      <HBox alignment="CENTER_RIGHT" prefHeight="2.0" prefWidth="593.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#handleSendReplyOnAction" text="Send Reply" />
+         </children>
+      </HBox>
+      <Label fx:id="outputlabel" prefHeight="63.0" prefWidth="230.0" />
+   </children>
+</VBox>

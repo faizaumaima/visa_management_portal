@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ms3_group47_evisa.FinancialOfficer.FinancialOfficerDashboardController">
+   <top>
+      <VBox prefHeight="89.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label prefHeight="39.0" prefWidth="239.0" text="Financial Officer Dashboard">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+   </top>
+   <left>
+      <VBox prefHeight="311.0" prefWidth="165.0" spacing="20.0" BorderPane.alignment="CENTER">
+         <padding>
+            <Insets top="10.0" />
+         </padding>
+         <children>
+            <Button mnemonicParsing="false" onAction="#handleViewPaymentRecordsOnAction" text="View Payment Records" />
+            <Button mnemonicParsing="false" onAction="#handleVerifyTransactionsOnAction" text="Verify Transactions" />
+            <Button mnemonicParsing="false" onAction="#handleGenerateFinancialRepordtsOnAction" text="Generate Financial Reports" />
+            <Button mnemonicParsing="false" onAction="#handleApproveRefindsOnAction" text="Approve Refnds" />
+            <Button mnemonicParsing="false" onAction="#handleUpdateFinancialStatusOnAction" text="Update Financial Status" />
+            <Button mnemonicParsing="false" onAction="#handleLogoutOnAction" text="Logout" />
+         </childr
+      </VBox>
+   </left>
+   <center>
+      <StackPane prefHeight="150.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label prefHeight="35.0" prefWidth="201.0" text="Welcome Financial Officer">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+         </children>
+      </StackPane>
+   </center>
+</BorderPane>

@@ -2,8 +2,6 @@ package com.example.ms3_group47_evisa;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
-import javafx.stage.Stage;
-import com.example.ms3_group47_evisa.utils.NavigationUtil;
 
 public class HelloController {
     @FXML
@@ -12,17 +10,5 @@ public class HelloController {
     @FXML
     protected void onHelloButtonClick() {
         welcomeText.setText("Welcome to JavaFX Application!");
-    }
-    
-    @FXML
-    protected void onClientButtonClick() {
-        Stage currentStage = (Stage) welcomeText.getScene().getWindow();
-        NavigationUtil.navigateToClientDashboard(currentStage);
-    }
-    
-    @FXML
-    protected void onSecurityManagerButtonClick() {
-        Stage currentStage = (Stage) welcomeText.getScene().getWindow();
-        NavigationUtil.navigateToSecurityManagerDashboard(currentStage);
     }
 }
