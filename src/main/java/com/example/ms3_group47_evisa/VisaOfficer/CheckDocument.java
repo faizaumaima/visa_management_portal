@@ -26,10 +26,9 @@ public class CheckDocument
 
     @javafx.fxml.FXML
     public void initialize() {
-        tableViewDocuments.getItems().addAll("documentname", "documenttype", "columnstatus");
-        columnDocumentType.setCellValueFactory(new PropertyValueFactory<>("documenttype"));
+        columnDocumentType.setCellValueFactory(new PropertyValueFactory<>("documentType"));
         columnStatus.setCellValueFactory(new PropertyValueFactory<>("status"));
-        columnDocumentName.setCellValueFactory(new PropertyValueFactory<>("documentname"));
+        columnDocumentName.setCellValueFactory(new PropertyValueFactory<>("documentName"));
     }
 
     @javafx.fxml.FXML
@@ -39,7 +38,7 @@ public class CheckDocument
     @javafx.fxml.FXML
     public void buttonMarkInvalidOnAction(ActionEvent actionEvent) {
         if (columnDocumentName.getText()==null) {
-            outputlabel.setText("Invalid: No document selected!")
+            outputlabel.setText("Invalid: No document selected!");
         }else {
             outputlabel.setText("Please Select a document First");
             return;
@@ -65,4 +64,3 @@ public class CheckDocument
 
         }
     }
-}
