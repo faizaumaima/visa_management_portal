@@ -40,9 +40,10 @@ public class CheckDocument
     public void buttonMarkInvalidOnAction(ActionEvent actionEvent) {
         if (columnDocumentName.getText()==null) {
             outputlabel.setText("Invalid: No document selected!")
-        }else{
+        }else {
             outputlabel.setText("Please Select a document First");
             return;
+        }
     }
 
     @javafx.fxml.FXML

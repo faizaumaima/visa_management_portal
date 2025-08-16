@@ -77,11 +77,9 @@ public class ApplicationIntakeOfficerDashboard
     public void viewApplicationOnAction(ActionEvent actionEvent) {
         try{
             FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("ApplicationIntakeOfficer/Application.fxml"));
-            Parent root=fxmlLoader.load();
-            Scene scene=new Scene(root);
-            Stage stage =new Stage();
+            Scene scene = new Scene(fxmlLoader.load());
+            Stage stage = new Stage();
             stage.setTitle("Hello!");
-
             stage.setScene(scene);
             stage.show();
         } catch (Exception e){
