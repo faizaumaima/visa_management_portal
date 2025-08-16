@@ -43,6 +43,7 @@ public class MarkAsEligible
         } catch (Exception e) {
             ///
         }
+
     }
 
     @javafx.fxml.FXML
