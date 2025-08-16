@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="670.0" prefWidth="776.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ms3_group47_evisa.SecurityOperationsDashboard">
+   <children>
+      <Label layoutX="21.0" layoutY="23.0" text="SM-Security Operations">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Button fx:id="liveFeedButton" layoutX="29.0" layoutY="145.0" mnemonicParsing="false" text="Live Feed" onAction="#onLiveFeedClick" />
+      <Button fx:id="incidentReportButton" layoutX="29.0" layoutY="343.0" mnemonicParsing="false" text="Incident Report" onAction="#onIncidentReportClick" />
+      
+      <!-- Missing fields for Java controller -->
+      <TextField fx:id="locationTextField" layoutX="29.0" layoutY="400.0" prefWidth="150.0" promptText="Enter location" />
+      <ComboBox fx:id="incidentTypeComboBox" layoutX="29.0" layoutY="430.0" prefWidth="150.0" promptText="Select incident type" />
+      <ComboBox fx:id="severityComboBox" layoutX="29.0" layoutY="460.0" prefWidth="150.0" promptText="Select severity" />
+      <TextField fx:id="reportedByTextField" layoutX="29.0" layoutY="490.0" prefWidth="150.0" promptText="Reported by" />
+      <TextArea fx:id="descriptionTextArea" layoutX="29.0" layoutY="520.0" prefHeight="80.0" prefWidth="150.0" promptText="Enter description" />
+      <Button fx:id="addIncidentButton" layoutX="29.0" layoutY="610.0" mnemonicParsing="false" text="Add Incident" onAction="#onAddIncidentClick" />
+      <Button fx:id="updateStatusButton" layoutX="29.0" layoutY="640.0" mnemonicParsing="false" text="Update Status" onAction="#onUpdateStatusClick" />
+      <AnchorPane layoutX="194.0" layoutY="158.0" prefHeight="484.0" prefWidth="572.0">
+         <children>
+            <Label layoutX="23.0" layoutY="25.0" text="Incident Report" />
+            <Label layoutX="23.0" layoutY="89.0" text="Incident ID:" />
+            <Button fx:id="loadButton" layoutX="475.0" layoutY="28.0" mnemonicParsing="false" text="Load" onAction="#onLoadClick" />
+            <TableView fx:id="incidentTableView" layoutX="14.0" layoutY="150.0" prefHeight="200.0" prefWidth="554.0">
+              <columns>
+                <TableColumn fx:id="idColumn" prefWidth="75.0" text="ID" />
+                <TableColumn fx:id="locationColumn" prefWidth="75.0" text="Location" />
+                  <TableColumn fx:id="incidentTypeColumn" prefWidth="103.20001220703125" text="Type of Incident" />
+                  <TableColumn fx:id="reportTimeColumn" prefWidth="110.39996337890625" text="Report Time" />
+                  <TableColumn fx:id="statusColumn" prefWidth="65.60003662109375" text="Status" />
+                  <TableColumn fx:id="assignedPersonColumn" prefWidth="125.5999755859375" text="Assigned Person" />
+              </columns>
+            </TableView>
+            <Button fx:id="respondButton" layoutX="475.0" layoutY="409.0" mnemonicParsing="false" text="Respond" onAction="#onRespondClick" />
+            <TextField fx:id="incidentIdField" layoutX="91.0" layoutY="85.0" />
+         </children>
+      </AnchorPane>
+      <Button fx:id="backButton" layoutX="691.0" layoutY="23.0" mnemonicParsing="false" text="Back" onAction="#onBackClick" />
+   </children>
+</AnchorPane>
