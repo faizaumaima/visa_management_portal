@@ -8,6 +8,7 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
+import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.stage.Stage;
 
 public class CheckDocument
@@ -25,6 +26,10 @@ public class CheckDocument
 
     @javafx.fxml.FXML
     public void initialize() {
+        tableViewDocuments.getItems().addAll("documentname", "documenttype", "columnstatus");
+        columnDocumentType.setCellValueFactory(new PropertyValueFactory<>("documenttype"));
+        columnStatus.setCellValueFactory(new PropertyValueFactory<>("status"));
+        columnDocumentName.setCellValueFactory(new PropertyValueFactory<>("documentname"));
     }
 
     @javafx.fxml.FXML
@@ -33,14 +38,11 @@ public class CheckDocument
 
     @javafx.fxml.FXML
     public void buttonMarkInvalidOnAction(ActionEvent actionEvent) {
-        if (columnDocumentName.isVisible()){
-            outputlabel.setText("Rejecte");
-        }else if (columnDocumentType.isVisible()){
-            outputlabel.setText("Approved");
+        if (columnDocumentName.getText()==null) {
+            outputlabel.setText("Invalid: No document selected!")
         }else{
-            outputlabel.setText("Select a decision");
+            outputlabel.setText("Please Select a document First");
             return;
-        }
     }
 
     @javafx.fxml.FXML

@@ -31,7 +31,7 @@ public class MarkAsResolved
     @javafx.fxml.FXML
     public void handleMarkAsResolvedOnAction(ActionEvent actionEvent) {
         if (ticketIdTextField.getText().trim().isEmpty()){
-            outputlabel.setText("Give ID");
+            outputlabel.setText("Give Ticket ID");
             return;
         }
     }
