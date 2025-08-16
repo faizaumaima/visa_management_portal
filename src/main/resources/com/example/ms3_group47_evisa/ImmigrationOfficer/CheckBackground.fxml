@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" spacing="10.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ms3_group47_evisa.ImmigrationOfficer.CheckBackgroundController">
+   <padding>
+      <Insets top="10.0" />
+   </padding>
+   <children>
+      <Label text="Application Details" />
+      <TextArea prefHeight="69.0" prefWidth="600.0" promptText="Applicant Details..." />
+      <Label text="Background Check" />
+      <CheckBox fx:id="visacheckbox" mnemonicParsing="false" text="Visa history checked" />
+      <CheckBox fx:id="pastcheckbox" mnemonicParsing="false" text="Past travel history reviewed" />
+      <CheckBox fx:id="immigrationcheckbox" mnemonicParsing="false" text="Immigration database checked" />
+      <Label text="Result" />
+      <HBox prefHeight="35.0" prefWidth="600.0" spacing="10.0">
+         <children>
+            <RadioButton fx:id="verifiedradiobutton" mnemonicParsing="false" text="Background verified">
+               <toggleGroup>
+                  <ToggleGroup fx:id="result" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton fx:id="issuesradiobutton" mnemonicParsing="false" text="Issues Flagged" toggleGroup="$result" />
+         </children>
+      </HBox>
+      <HBox prefHeight="37.0" prefWidth="600.0" spacing="10.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#saveonaction" text="Save result" />
+            <Button mnemonicParsing="false" onAction="#clearonaction" text="Clear" />
+         </children>
+      </HBox>
+      <Label fx:id="outputlabel" prefWidth="400.0" />
+   </children>
+</VBox>

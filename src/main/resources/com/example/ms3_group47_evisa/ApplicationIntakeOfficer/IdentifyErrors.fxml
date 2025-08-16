@@ -10,18 +10,16 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="449.0"
-            prefWidth="620.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="449.0" prefWidth="620.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ms3_group47_evisa.ApplicationIntakeOfficer.IdentifyErrorsController">
     <padding>
-        <Insets top="20.0"/>
+        <Insets top="20.0" />
     </padding>
     <top>
         <HBox alignment="CENTER" prefHeight="39.0" prefWidth="600.0" BorderPane.alignment="CENTER">
             <children>
                 <Label alignment="CENTER" text="Identify Errors Or Missing Information">
                     <font>
-                        <Font size="16.0"/>
+                        <Font size="16.0" />
                     </font>
                 </Label>
             </children>
@@ -30,31 +28,30 @@
     <center>
         <VBox prefHeight="370.0" prefWidth="619.0" spacing="15.0" BorderPane.alignment="CENTER">
             <padding>
-                <Insets top="20.0"/>
+                <Insets top="20.0" />
             </padding>
             <children>
-                <Label text="Application Document and Data"/>
-                <TableView prefHeight="123.0" prefWidth="600.0">
+                <Label text="Application Document and Data" />
+                <TableView fx:id="applicationdatatableview" prefHeight="123.0" prefWidth="600.0">
                     <columns>
-                        <TableColumn prefWidth="197.33334350585938" text="Application ID"/>
-                        <TableColumn prefWidth="198.0" text="Applicant Name"/>
-                        <TableColumn prefWidth="204.6666259765625" text="Status"/>
+                        <TableColumn fx:id="applicantIdcol" prefWidth="311.9999694824219" text="Application ID" />
+                        <TableColumn fx:id="applicantnamecol" prefWidth="307.3333740234375" text="Applicant Name" />
                     </columns>
                 </TableView>
-                <Button mnemonicParsing="false" text="Check for Erros"/>
-                <Label text="Result:"/>
-                <Label prefWidth="400.0" textFill="#dd2323"/>
+                <Button mnemonicParsing="false" onAction="#checkerrorOnaction" text="Check for Erros" />
+                <Label text="Result:" />
+                <Label fx:id="resultlabel" prefWidth="400.0" textFill="#dd2323" />
                 <HBox prefHeight="31.0" prefWidth="600.0" spacing="20.0">
                     <children>
-                        <Button mnemonicParsing="false" text="Mark as Incomplete"/>
-                        <Button mnemonicParsing="false" text="Notify Applicant"/>
+                        <Button mnemonicParsing="false" onAction="#markasincompleteonaction" text="Mark as Incomplete" />
+                        <Button mnemonicParsing="false" onAction="#notifyapplicantonaction" text="Notify Applicant" />
                     </children>
                 </HBox>
-                <Label prefWidth="400.0" textFill="#27a610"/>
+                <Label fx:id="outputlabel" prefWidth="400.0" textFill="#27a610" />
                 <HBox alignment="CENTER" prefHeight="59.0" prefWidth="620.0" spacing="10.0">
                     <children>
-                        <Button mnemonicParsing="false" text="Back"/>
-                        <Button alignment="CENTER" mnemonicParsing="false" text="Logout"/>
+                        <Button mnemonicParsing="false" onAction="#backonaction" text="Back" />
+                        <Button alignment="CENTER" mnemonicParsing="false" onAction="#logoutonaction" text="Logout" />
                     </children>
                 </HBox>
             </children>

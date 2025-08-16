@@ -5,21 +5,22 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ms3_group47_evisa.ApplicationIntakeOfficer.Application">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ms3_group47_evisa.ApplicationIntakeOfficer.ApplicationController">
    <children>
       <Label layoutX="278.0" layoutY="23.0" text="Application" />
       <Label layoutX="29.0" layoutY="102.0" text="Name" />
       <Label layoutX="29.0" layoutY="139.0" text="email" />
       <Label layoutX="29.0" layoutY="183.0" text="Nationality" />
       <Label layoutX="29.0" layoutY="224.0" text="Travel purpose" />
-      <Label layoutX="29.0" layoutY="271.0" text="Visa Type" />
-      <TextField layoutX="112.0" layoutY="98.0" />
-      <TextField layoutX="112.0" layoutY="135.0" />
-      <TextField layoutX="112.0" layoutY="179.0" />
-      <TextField layoutX="112.0" layoutY="220.0" />
-      <TextField layoutX="112.0" layoutY="267.0" />
-      <Button layoutX="266.0" layoutY="336.0" mnemonicParsing="false" text="Submit" />
+      <TextField fx:id="nametextfield" layoutX="112.0" layoutY="98.0" />
+      <TextField fx:id="emailTextfield" layoutX="112.0" layoutY="135.0" />
+      <TextField fx:id="nationalityTextfield" layoutX="112.0" layoutY="179.0" />
+      <TextField fx:id="TravelPurposeTextfield" layoutX="112.0" layoutY="220.0" />
+      <Button layoutX="261.0" layoutY="307.0" mnemonicParsing="false" onAction="#submitOnaction" text="Submit" />
       <Label layoutX="31.0" layoutY="68.0" text="Application ID" />
-      <TextField layoutX="112.0" layoutY="64.0" />
+      <TextField fx:id="applicationIdTextField" layoutX="112.0" layoutY="64.0" />
+      <Label fx:id="outputlabel" layoutX="332.0" layoutY="129.0" prefHeight="49.0" prefWidth="219.0" />
+      <Label layoutX="31.0" layoutY="266.0" text="Visa type" />
+      <TextField fx:id="visatypeTextfield" layoutX="112.0" layoutY="262.0" />
    </children>
 </AnchorPane>

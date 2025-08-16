@@ -14,7 +14,6 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-
 <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="453.0" prefWidth="600.0" spacing="15.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ms3_group47_evisa.CustomerSupportAgency.MarkAsResolved">
    <padding>
       <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
@@ -27,7 +26,7 @@
       </Label>
       <TitledPane animated="false" text="Ticket Details">
         <content>
-          <AnchorPane fx:id="issueDescriptionArea" minHeight="0.0" minWidth="0.0" prefHeight="150.0" prefWidth="558.0">
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="150.0" prefWidth="558.0">
                <children>
                   <GridPane layoutX="14.0" layoutY="16.0" prefHeight="91.0" prefWidth="306.0">
                     <columnConstraints>
@@ -43,9 +42,9 @@
                         <Label text="Ticket ID:" />
                         <Label text="Customer Name:" GridPane.rowIndex="1" />
                         <Label text="Issue Description:" GridPane.rowIndex="2" />
-                        <TextField fx:id="ticketIdField" prefHeight="38.0" prefWidth="108.0" GridPane.columnIndex="1" />
-                        <TextField fx:id="customerNameField" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-                        <TextArea fx:id="issueDescriptionArea" prefHeight="23.0" prefWidth="141.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                        <TextField fx:id="ticketIdTextField" prefHeight="38.0" prefWidth="108.0" GridPane.columnIndex="1" />
+                        <TextField fx:id="customerNameTextField" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                        <TextArea fx:id="issueDescriptionTextArea" prefHeight="23.0" prefWidth="141.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
                      </children>
                   </GridPane>
                </children>
@@ -56,16 +55,17 @@
         <content>
           <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="64.0" prefWidth="558.0">
                <children>
-                  <TextArea fx:id="resolutionNotesArea" layoutY="3.0" prefHeight="58.0" prefWidth="560.0" promptText="Write resolution details here..." />
+                  <TextArea fx:id="resolutionTextArea" layoutY="3.0" prefHeight="58.0" prefWidth="560.0" promptText="Write resolution details here..." />
                </children>
             </AnchorPane>
         </content>
       </TitledPane>
       <HBox alignment="CENTER" prefHeight="66.0" prefWidth="560.0" spacing="10.0">
          <children>
-            <Button fx:id="markresolvedButton" mnemonicParsing="false" text="Mark As Resolved" />
-            <Button fx:id="cancelButton" mnemonicParsing="false" text="Cancel" />
+            <Button mnemonicParsing="false" onAction="#handleMarkAsResolvedOnAction" text="Mark As Resolved" />
+            <Button mnemonicParsing="false" onAction="#handleBackOnAction" text="Back" />
          </children>
       </HBox>
+      <Label fx:id="outputlabel" prefHeight="53.0" prefWidth="230.0" />
    </children>
 </VBox>
