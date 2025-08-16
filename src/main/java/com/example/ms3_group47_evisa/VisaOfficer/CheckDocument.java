@@ -14,13 +14,13 @@ import javafx.stage.Stage;
 public class CheckDocument
 {
     @javafx.fxml.FXML
-    private TableColumn columnDocumentType;
+    private TableColumn<VisaOfficerClass, String> columnDocumentType;
     @javafx.fxml.FXML
-    private TableColumn columnStatus;
+    private TableColumn<VisaOfficerClass, String> columnStatus;
     @javafx.fxml.FXML
-    private TableView tableViewDocuments;
+    private TableView<VisaOfficerClass> tableViewDocuments;
     @javafx.fxml.FXML
-    private TableColumn columnDocumentName;
+    private TableColumn<VisaOfficerClass, String> columnDocumentName;
     @javafx.fxml.FXML
     private Label outputlabel;
 
