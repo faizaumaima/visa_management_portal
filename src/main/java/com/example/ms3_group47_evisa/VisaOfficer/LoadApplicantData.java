@@ -5,6 +5,7 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
+import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.stage.Stage;
 
 public class LoadApplicantData
@@ -18,14 +19,16 @@ public class LoadApplicantData
     @javafx.fxml.FXML
     private TextField nameTextField;
     @javafx.fxml.FXML
-    private TableColumn documentNameTableColumn;
+    private TableColumn<VisaOfficerClass, String> documentNameTableColumn;
     @javafx.fxml.FXML
     private TextField nationalityTextField;
     @javafx.fxml.FXML
-    private TableColumn documentStatusTableColumn;
+    private TableColumn<VisaOfficerClass, String> documentStatusTableColumn;
 
     @javafx.fxml.FXML
     public void initialize() {
+        documentNameTableColumn.setCellValueFactory(new PropertyValueFactory<>("documentName"));
+        documentStatusTableColumn.setCellValueFactory(new PropertyValueFactory<>("status"));
     }
 
     @javafx.fxml.FXML
