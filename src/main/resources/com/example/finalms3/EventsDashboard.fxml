@@ -5,9 +5,6 @@
 <?import javafx.scene.control.DatePicker?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextField?>
-<?import javafx.scene.control.TextArea?>
-<?import javafx.scene.control.TableView?>
-<?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
@@ -41,38 +38,27 @@
       <ComboBox fx:id="eventTypeFilterComboBox" layoutX="22.0" layoutY="530.0" prefWidth="200.0" promptText="Filter by event type" />
       <DatePicker fx:id="dateFilterDatePicker" layoutX="22.0" layoutY="560.0" promptText="Filter by date" />
       <Button fx:id="registerButton" layoutX="22.0" layoutY="590.0" mnemonicParsing="false" text="Register for Event" onAction="#onRegisterClick" />
-      <!-- Events Table -->
-      <TableView fx:id="eventsTableView" layoutX="277.0" layoutY="129.0" prefHeight="300.0" prefWidth="478.0">
-         <columns>
-            <TableColumn fx:id="idColumn" text="ID" prefWidth="60.0" />
-            <TableColumn fx:id="eventTypeColumn" text="Event Type" prefWidth="120.0" />
-            <TableColumn fx:id="dateColumn" text="Date" prefWidth="100.0" />
-            <TableColumn fx:id="locationColumn" text="Location" prefWidth="120.0" />
-            <TableColumn fx:id="nameColumn" text="Name" prefWidth="150.0" />
-            <TableColumn fx:id="statusColumn" text="Status" prefWidth="80.0" />
-         </columns>
-      </TableView>
-      
-      <!-- Event Details TextArea -->
-      <TextArea fx:id="eventDetailsTextArea" layoutX="277.0" layoutY="440.0" prefHeight="100.0" prefWidth="478.0" promptText="Event details will appear here..." />
-      
-      <!-- Form Section -->
-      <AnchorPane layoutX="22.0" layoutY="129.0" prefHeight="400.0" prefWidth="240.0">
+      <TextArea fx:id="eventDetailsTextArea" layoutX="277.0" layoutY="129.0" prefHeight="200.0" prefWidth="478.0" promptText="Event details will appear here..." />
+      <Label fx:id="upcomingEventsLabel" layoutX="22.0" layoutY="620.0" text="Upcoming Events: 0" />
+      <AnchorPane layoutX="277.0" layoutY="129.0" prefHeight="486.0" prefWidth="478.0">
          <children>
-            <Label layoutX="13.0" layoutY="12.0" text="Events Type:" />
-            <Label layoutX="13.0" layoutY="61.0" text="Date:" />
-            <Label layoutX="13.0" layoutY="117.0" text="Location:" />
-            <Label layoutX="13.0" layoutY="162.0" text="Document Type:" />
-            <Button fx:id="uploadDocumentButton" layoutX="20.0" layoutY="255.0" mnemonicParsing="false" text="Upload Document" onAction="#onUploadDocumentClick" />
-            <Button fx:id="submitButton" layoutX="120.0" layoutY="255.0" mnemonicParsing="false" text="Submit" onAction="#onSubmitClick" />
-            <TextField fx:id="locationField" layoutX="67.0" layoutY="113.0" />
-            <DatePicker fx:id="eventDatePicker" layoutX="46.0" layoutY="57.0" />
-            <ComboBox fx:id="documentTypeComboBox" layoutX="67.0" layoutY="158.0" prefWidth="150.0" />
-            <ComboBox fx:id="eventTypeComboBox" layoutX="67.0" layoutY="25.0" prefWidth="150.0" />
-            <Button fx:id="reportButton" layoutX="20.0" layoutY="300.0" mnemonicParsing="false" text="Report" onAction="#onReportClick" />
+            <AnchorPane layoutX="16.0" layoutY="88.0" prefHeight="318.0" prefWidth="447.0">
+               <children>
+                  <Label layoutX="13.0" layoutY="12.0" text="Events Type:" />
+                  <Label layoutX="13.0" layoutY="61.0" text="Date:" />
+                  <Label layoutX="13.0" layoutY="117.0" text="Location:" />
+                  <Label layoutX="190.0" layoutY="162.0" text="Document Type:" />
+                  <Button fx:id="uploadDocumentButton" layoutX="20.0" layoutY="255.0" mnemonicParsing="false" text="Upload Document" onAction="#onUploadDocumentClick" />
+                  <Button fx:id="submitButton" layoutX="360.0" layoutY="255.0" mnemonicParsing="false" text="Submit" onAction="#onSubmitClick" />
+                  <TextField fx:id="locationField" layoutX="67.0" layoutY="113.0" />
+                  <DatePicker fx:id="eventDatePicker" layoutX="46.0" layoutY="57.0" />
+                  <ComboBox fx:id="documentTypeComboBox" layoutX="290.0" layoutY="158.0" prefWidth="150.0" />
+               </children>
+            </AnchorPane>
+            <Button fx:id="reportButton" layoutX="403.0" layoutY="440.0" mnemonicParsing="false" text="Report" onAction="#onReportClick" />
+            <Label layoutX="27.0" layoutY="26.0" text="Type of Events:" />
+            <ComboBox fx:id="eventTypeComboBox" layoutX="115.0" layoutY="25.0" prefWidth="150.0" />
          </children>
       </AnchorPane>
-      
-      <Label fx:id="upcomingEventsLabel" layoutX="22.0" layoutY="620.0" text="Upcoming Events: 0" />
    </children>
 </AnchorPane>
