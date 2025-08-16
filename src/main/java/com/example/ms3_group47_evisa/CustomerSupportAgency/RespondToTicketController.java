@@ -28,7 +28,7 @@ public class RespondToTicketController
     @javafx.fxml.FXML
     public void handleSendResponseOnAction(ActionEvent actionEvent) {
         if (ticketIdTextField.getText().trim().isEmpty()){
-            outputlabel.setText("Give ID");
+            outputlabel.setText("Give Ticket ID");
             return;
         }
     }
@@ -36,7 +36,7 @@ public class RespondToTicketController
     @javafx.fxml.FXML
     public void handlebackButtonOnAction(ActionEvent actionEvent) {
         try{
-            FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("VisaOfficer/VisaOfficerDashboard.fxml"));
+            FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("CustomerSupportAgency/CustomerSupportAgencyDashboard.fxml"));
             Scene scene = new Scene(fxmlLoader.load());
             Stage stage = new Stage();
             stage.setTitle("Hello!");

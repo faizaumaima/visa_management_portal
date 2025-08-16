@@ -8,6 +8,7 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
+import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.stage.Stage;
 
 public class MarkAsEligible
@@ -50,5 +51,6 @@ public class MarkAsEligible
             outputlabel.setText("Enter ID:");
             return;
         }
+        outputlabel.setText("Confirmed Eligible");
     }
 }

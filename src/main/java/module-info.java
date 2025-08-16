@@ -3,7 +3,6 @@ module com.example.ms3_group47_evisa {
     requires javafx.fxml;
     requires javafx.graphics;
     requires java.desktop;
-    requires com.example.ms3_group47_evisa;
 
 
     opens com.example.ms3_group47_evisa to javafx.fxml;

@@ -123,7 +123,7 @@ public class ApplicantInfo
         try{
             if (file.exists()){
                 fos = new FileOutputStream(file,true);
-                oos = new AppendableObjectOutputStream(oos);
+                oos = new AppendableObjectOutputStream(fos);
             }else{
                 fos = new FileOutputStream(file,true);
                 oos = new ObjectOutputStream(fos);
