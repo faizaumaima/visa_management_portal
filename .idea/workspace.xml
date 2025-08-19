@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e6b27a6c-3d90-4588-9336-db93faab6837" name="Changes" comment="Merge remote-tracking branch 'origin/master'&#10;&#10;# Conflicts:&#10;#&#9;src/main/java/com/example/ms3_group47_evisa/ApplicationIntakeOfficer/ApplicationIntakeOfficerDashboardController.java&#10;#&#9;src/main/java/com/example/ms3_group47_evisa/CustomerSupportAgency/CustomerSupportAgencyDashboardController.java&#10;#&#9;src/main/java/com/example/ms3_group47_evisa/CustomerSupportAgency/RespondToTicketController.java&#10;#&#9;src/main/resources/com/example/ms3_group47_evisa/ApplicationIntakeOfficer/ApplicationIntakeOfficerDashboard.fxml">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="e6b27a6c-3d90-4588-9336-db93faab6837" name="Changes" comment="Merge remote-tracking branch 'origin/master'&#10;&#10;# Conflicts:&#10;#&#9;src/main/java/com/example/ms3_group47_evisa/ApplicationIntakeOfficer/ApplicationIntakeOfficerDashboardController.java&#10;#&#9;src/main/java/com/example/ms3_group47_evisa/CustomerSupportAgency/CustomerSupportAgencyDashboardController.java&#10;#&#9;src/main/java/com/example/ms3_group47_evisa/CustomerSupportAgency/RespondToTicketController.java&#10;#&#9;src/main/resources/com/example/ms3_group47_evisa/ApplicationIntakeOfficer/ApplicationIntakeOfficerDashboard.fxml" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -29,12 +27,12 @@
     &quot;assignee&quot;: &quot;faizaumaima&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/faizaumaima/visa_management_portal.git&quot;,
-    &quot;accountId&quot;: &quot;97e03da9-533a-4e12-a674-310a184da4a8&quot;
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/faizaumaima/visa_management_portal.git",
+    "accountId": "a7ce65df-027c-466a-932b-584f546f0e85"
   }
-}</component>
+}]]></component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
   </component>
