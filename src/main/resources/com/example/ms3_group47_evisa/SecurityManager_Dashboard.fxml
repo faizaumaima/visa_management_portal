@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="658.0" prefWidth="759.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ms3_group47_evisa.SecurityManagerDashboard">
+   <children>
+      <Label layoutX="20.0" layoutY="14.0" text="E-Visa Management Portal - Security Manager">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="securityOperationsButton" layoutX="59.0" layoutY="124.0" mnemonicParsing="false" prefHeight="124.0" prefWidth="131.0" text="Security Operations" onAction="#onSecurityOperationsClick" />
+      <Button fx:id="signOutButton" layoutX="669.0" layoutY="30.0" mnemonicParsing="false" text="Sign Out" onAction="#onSignOutClick" />
+      <Button fx:id="incidentReportsButton" layoutX="279.0" layoutY="124.0" mnemonicParsing="false" prefHeight="124.0" prefWidth="131.0" text="Incident Reports" onAction="#onIncidentReportsClick" />
+      <Button fx:id="trainingModulesButton" layoutX="525.0" layoutY="124.0" mnemonicParsing="false" prefHeight="124.0" prefWidth="131.0" text="Training Modules" onAction="#onTrainingModulesClick" />
+      <Button fx:id="securityAuditsButton" layoutX="66.0" layoutY="340.0" mnemonicParsing="false" prefHeight="124.0" prefWidth="131.0" text="Security Audits" onAction="#onSecurityAuditsClick" />
+      <Button fx:id="threatCommunicationButton" layoutX="286.0" layoutY="340.0" mnemonicParsing="false" prefHeight="124.0" prefWidth="138.0" text="Threat communication" onAction="#onThreatCommunicationClick" />
+      <Button fx:id="emergencyPlansButton" layoutX="525.0" layoutY="340.0" mnemonicParsing="false" prefHeight="124.0" prefWidth="131.0" text="Emergency Plans" onAction="#onEmergencyPlansClick" />
+      <Button fx:id="evaluationButton" layoutX="441.0" layoutY="496.0" mnemonicParsing="false" prefHeight="124.0" prefWidth="131.0" text="Evaluation" onAction="#onEvaluationClick" />
+      <Button fx:id="accessControlButton" layoutX="193.0" layoutY="503.0" mnemonicParsing="false" prefHeight="124.0" prefWidth="131.0" text="Access Control" onAction="#onAccessControlClick" />
+   </children>
+</AnchorPane>
